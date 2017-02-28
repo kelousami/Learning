@@ -1,0 +1,63 @@
+Instructions for setting up a basic openstack cloud : devstack.
+Thanks to Ronald Bradford blog posts.
+
+Prerequisistes
+--------------
+Host Machine running 64 bit OS with minimum RAM of 4Gb, Disk space of 10Gb. 
+
+Step 1 : Setting up the VM 
+--------------------------
+Default installation of VirtualBox.
+Create a HostOnly network adapter (under VirtualBox preferences > Network).
+Create a new VM, with all default values.
+Before starting it, add the host-only adapeter as Adapter 2 in machine's network settings.
+Download Ubuntu Server 14.04 server image (.iso)
+$ wget http://releases.ubuntu.com/14.04/ubuntu-14.04.4-server-amd64.iso
+Start the VM, choose the ISO file downloaded earlier and proceed with install:
+ Choose almost default values. 
+ Choose eth0 as primary network interface. 
+ Choose OpenSSH Server to be installed.
+
+Step 2 : Configuring Ubuntu Server 14.04
+----------------------------------------
+
+$ sudo su -
+$ umask 266 & echo "stack ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/stack
+$ apt-get update && apt-get upgrade -y
+$ echo "auto eth1
+iface eth1 inet dhcp" >> /etc/network/interfaces
+$ ifup eth1
+
+
+Step 3 : Installing devstack
+----------------------------
+Install Git
+$ sudo apt-get install -y git-core
+
+Get devstack clone 
+$ git clone https://git.openstack.org/openstack-dev/devstack
+
+Configure devstack
+$ cd devstack
+$ cp samples/local.conf
+$ HOST_IP="192.168.56.101"
+$ echo "HOST_IP={$HOST_IP}" >> local.conf
+
+Install devstack
+$ ./stack.sh
+
+Step 4 : Verify
+---------------
+Verify evrything is OK by accessing http://192.168.56.101 (admin/nomoresecret)
+
+here's a list of some first commands:
+
+Set some variables (username/password, url, project...)
+$ source accrc/admin/admin
+
+$ openstack user list
+$ openstack project list
+$ openstack command list
+$ openstack --help
+
+$ /usr/local/bin/glance-api --config-file=/etc/glance/glance-api.conf & echo $! >/opt/stack/status/stack/g-api.pid; fg || echo "g-api failed to start" | tee "§opt/stack/status/stack/g-api.failure"

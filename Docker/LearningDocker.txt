@@ -1,0 +1,145 @@
+Docker was developped by (Solomon Hykes) dotCloud between 2008-2010 and released open source later on 2013.
+
+According to Akshay Karle
+-------------------------
+Hardware emulation : virtualization using hypervisor letting a guest OS to run its kernel and user space on top of host OS
+OS virtualization : another way to say containerization letting a container of user space run on top of host OS
+Containerization is made by isolation of a set of process and resources (cpu, disk, memory ..) from the host OS
+
+Some use cases: 
+- operating system image --> OS containers (such as LXC, OpenVZ, Linux VServer, BSD Jails and SOlaris zones)
+- application packageed as image --> Application containers (such as Docker and Rocket)
+
+
+Docker was build on top of LXC
+Docker (and most containers) operate at the process level
+
+
+
+According to Mark Shuttleworth
+------------------------------
+Physical Machines --> Virtual machines (KVM..) --> Machine containers (LXD..) --> Process containers (Docker..) --> Application container (Snap..)
+
+
+Docker
+------
+Container is not a full VM. No need to HyperVisor and other OS kernels running on a host OS. Docker uses host OS kernel and sets up a container isolating application
+from the host OS.
+
+Container is a running instance of an Image. An image is a template of an environment (OS, software and application code).
+
+Images are defined in a dockerfile. Dockerfile is built to get an image. The image is run to get container.
+
+Docker daemons run on host OS. It creates and manages docker objects : Images, Containers, Networks, Volumes, Data, etc.
+
+Docker client is the primary user interface to docker. It accepts commands from the user and communicates back and forth withe a docker daemon.
+
+In Dockerfile, we don't start from scratch. We always build an image starting from a existing one.
+From hub.docker.com we can search for a specific image to start with (php, java ...). Prefer official ones.
+
+To create image, use <docker build -t our_image_name PATH_to_Dockerfile>, for example
+$ docker build -t hello-world .
+
+To run image <docker run our_image_name>, for example
+$ docker run -p 80:80 hello-world
+(notice -p option wich is used to redirect port between host and image which listen from 80 in the example)
+
+Volumes are used to share (see, no copy is made) files/folders between images and an image and its host OS. 
+To mount a volume we use -v option, example
+$ docker run -p 80:80 -v /home/kelousami/docker/src/:/var/www/html hello-world
+(it's ok to use -v while developing, but at the end, a build is necessary to construct the image, -v does not update/change the image)
+
+Containers stop (exit) when we stop them explicitly (^C) or when the main process stops.
+See the container as if it is the main process (FOREGROUND).
+
+Docker client communicates to docker daemon via Rest API, Socket.IO and TCP. Rest API is the primary mode for communication.
+
+Docker registry is storage component for Docker images. May be public/private. An example is Docker Hub.
+
+
+Main Simple Functionnalities of Docker
+--------------------------------------
+ <docker build> client asks daemon to create image and stores it in registry (we then have a local copy and remote copy of the image)
+ <docker pull> client asks daemon to pull (download) image from repositoy 
+ <docker run> client asks daemon to execute the container (create container from image)
+
+Basic docker commands
+---------------------
+To pull a docker image from a Docker Hub
+$ docker pull <image-name:tag>
+(tag specifies the version of the image we want to pull)
+
+To run a docker image 
+$ docker run <image-name:tag>
+or
+$ docker run <image-id>
+
+For example, to pull and run centos-7 (official version from hub.docker.com), we should do
+	$ sudo docker pull centos:centos7
+	$ sudo docker run -it centos:centos7
+	(-i to let it be interactive, -t to attach a terminal, both a necessary to have a terminal with stdin to interact with the image, 
+	as if we connect via ssh)
+
+
+To list all images in our system
+$ docker images
+
+To list running containers
+$ docker ps
+
+To list all containers in our system
+$ docker ps -a
+
+To start an existing container
+$ docker start <container id>     (container id can be found by $ docker ps -a)
+
+To stop the container 
+$ docker stop <container id>
+
+To delete a container 
+$ docker rm <container name>
+
+To delete an image
+$ docker rmi <image id>
+$ docker rmi <repo:tag>
+
+Docker file
+------------
+keywords
+	FROM -> indicates the base image from which our image will be built
+		FROM centos:7	
+
+	RUN -> commands that need to be executed on the image. 
+	It has two formats : 
+	RUN <command>, a shell form
+	RUN ["executable","param1","param2"], an exec form
+	
+	VOLUME -> creates an external mounting point 
+	It has two formats:
+	VOLUME /path1 /path2
+	VOLUME ["path1", "path2"]
+
+	CMD -> Specify the command or the entry point when the container runs
+	
+
+Network 
+-------
+In order to run multiple applications listening on same ports in containers, they have to be mapped to different ports on host machine.
+To do this, we let Docker assign itself the ports on host machine, with the option -p <port_in_container>.
+For example: 
+    if the container application is Wildfly which will listen on 8080 and 9990, and you have a cluster of them, then for each instance 
+    creation just add "-p 8080 -p 9990" to run command (instead of -p 8080:8080 -p 9990:9990, which works for the first one and fails
+    for teh second as ports are always in use).
+
+
+Diagnose problems
+-----------------
+$ sudo docker version
+$ sudo docker info
+$ sudo docker logs <container_id>
+
+
+
+
+
+

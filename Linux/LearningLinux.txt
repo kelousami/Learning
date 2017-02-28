@@ -1,0 +1,417 @@
+
+Basics
+------
+Standard I/O
+	stdin  - standard input, fd 0
+	stdout - standard output, fd 1
+	stderr - standard error, fd 2
+	<ls -l /dev/std*>
+	lrwxrwxrwx   1 root root            15 janv. 22 00:59 stdout -> /proc/self/fd/1
+	lrwxrwxrwx   1 root root            15 janv. 22 00:59 stdin -> /proc/self/fd/0
+	lrwxrwxrwx   1 root root            15 janv. 22 00:59 stderr -> /proc/self/fd/2
+
+Command lines I have used 
+-------------------------
+chaining commands (see appendix for more examples)
+	<command1 && command2> command2 will run if and only if command1 returns 0 (SUCESS). && is a bash's AND logic operator.
+	<command1 || command2> command2 will run if and only if command1 rerurns other than 0 (FAILURE). || is bash's OR logic operator. (just like else in programming)
+	<command1 ; command1> both commands are run. command2 will run after command1 (sequentially) ; is a commad separator.
+	<command1 & command2 &> both commands are run simultaneously in backgroud
+	! Not Operator. 
+		<rm -r !(*.html)> will remove everything but html files.
+	<command1 | command2> command1 acts as input for command2
+	{} command combination operator (multiple commands)
+		<command1 || {command1a; command1b; command1c} && command2> if command1 fails then run commands 1a to 1c then if all successeded then run command2
+	() precedence operator 
+		<(command1 && command2) || (command3 && command4)> without () if command1 fails none will be run. with () if command1 fails, command3 && command4 will be run
+	
+
+sh - SHell is the command language interpreter. 
+     see ./Shell-Scripting/LearningShellScrioting.md
+
+bash - GNU Bourne-Again SHell. It's an sh-compatible command language interpreter (CLI). It contains also features from Korn and C SHells (ksh and csh). 
+       It executes command read from standard input or file.
+	<bash -c command> will interpret and execute the command
+	<sudo bash -c 'cat apt.sources.list >> /etc/apt/sources.list'> bash will execute the command as root. Usefull as sudo would apply only for cat and not the redirection.
+    <sudo bash -c 'cat '$WORKING_HOSTS' >> '$HOSTS> same example with variables. Note that we close '', put the variable and then open it again.
+
+vi - text editing 
+	<:%s/old/new/g> this will replace old text by new text in entire file
+	<SHIFT+5 SHIFT+>+>> will indent 5 lines
+	<:put =strftime('%c')> will insert timestamp in the file buffer
+	<:set number> will show line numbers. To make it permanent, add <set number> to file ~/.vimrc
+    <SHIFT+17 SHIFT+G> goto line 17 and <SHIFT+G> alone, goto end of file
+
+man - manual for a particular command / application
+more - display content of file with paging
+less - better than more (for example, it does not require loading the whole file before reading)
+
+cat - display content of file
+    <cat afile> prints the content of afile
+    <cat > afile> redirects stdout to afile and gives interactive session to user to send whatever he wants to afile (will overwrite it) via stdout. Issue Ctrl-D to end the session.
+    <cat >> afile> same as before but will append to afile instead of overwriting.
+
+paste - merge lines of files
+
+type - indicates what a commd is (especially by giving its path)
+	<type -a> displays all content of a command, for example :
+		$ type -a java 
+		java is /usr/bin/java
+		java is /usr/lib/jvm/java-8-oracle/bin/java
+		java is /usr/lib/jvm/java-8-oracle/jre/bin/java
+
+cd - change directory
+cp - copy files/directories
+mv - moving and/or renaming files/directories
+rm - delete files/directories 
+mkdir - create new directory
+
+ln - create link 
+    <ln -s actual_file link> will create a link to the actual_file
+
+ls - listing the content of a directory
+
+tree - display filesystem content as tree
+	<tree -d> - displays only directories, do not show files 
+
+tail - displays the last lines of a file/stream
+head - diplays the first lines of a file/stream
+df - displays disk space usage of mounted file system
+
+sed - stream editor for filtering and transforming text. sed process the input in ONE pass.
+    <sed -i 's/kibana/logstash/g' afile> substitute all occurences of 'kibana' by 'logstash' in afile.
+    <sed -i -- 's/kibana/logstash/g' *> substitute all occurences of 'kibana' by 'logstash' in all file under current location (this folder only, non-recursive).
+
+grep - find/display text/characters/patterns in file/stream
+
+awk - stream manipulation program
+	<awk 'NF' file> will display the file without empty/blank lines
+
+tee - reads from stdin and writes to stdout and to the gived file
+	<tee test> will let you write via stdin and while you hit enter the writen text is sent to test file and to stdout simultaneously
+	<tee -a test> will do same but will append to file test instead of overwrinting
+
+script - records terminal stdin/out/err into a given file
+	<script file> record all terminal outputs to file
+	<exit> end the recording session
+
+ps - process information
+	<ps -ef> is the standard syntax of displaying all process. f lets full format.
+	<ps aux> is the BSD syntax of displaying all process
+    <ps -p 1> displays the process with PID=1, which in instance informs which
+    system is in use, whether "SysV init" or "systemd"
+
+sleep - Pause for some seconds as given in parameter
+	<sleep 30> will pause 30 seconds
+	<sleep 30 &> will pause 30 seconds in background. Shell forks and assigns a child-shell to the sleeping process. It dispalys the job number and PID
+	[1] 28676
+	Notice that & also lets Shell to store the PID of the process. It's give by $!
+	<echo $!> will return 28676
+
+fg/bg - process will run foreground/background. arguments include PID or %JOB_NUMBER.
+	<fg 1> will continue running process of job 1 in foreground. it will also be resumed if suspended (by CTRL+Z for example).
+	<bg 12347> will continue running process 12347 in background. it will also be resumed if suspended (by CTRL+Z for example).
+	<bg 1 2 3> will run jobs 1 2 3 in backgroud (this will resume any stopped one)
+
+nohup - runs command in backgroud immune from session closing (hangups). output is direcrted to file nohup.out (or $HOME/nohup.out), thus output is non-tty.
+	<nohup commad &> will run commad in backgroud and writes output to nohup.out
+	<nohup command > /dev/null 2>&1 &> will run command in background no need to nohup.out as both stdout (1) and stderr(2) are redirected to /dev/null
+		(see https://en.wikipedia.org/wiki/Redirection_(computing)#Redirecting_to_and_from_the_standard_file_handles)
+
+jobs - dislay jobs currently in background and their state and PID.
+	<jobs> will display
+	[1]+  Running                 sleep 30 &	
+
+kill - sends signal to process. Default signal sent is TERM.
+	<kill -L> list signal names
+	<sudo kill -L>
+	 1 HUP      2 INT      3 QUIT     4 ILL      5 TRAP     6 ABRT     7 BUS
+	 8 FPE      9 KILL    10 USR1    11 SEGV    12 USR2    13 PIPE    14 ALRM
+	15 TERM    16 STKFLT  17 CHLD    18 CONT    19 STOP    20 TSTP    21 TTIN
+	22 TTOU    23 URG     24 XCPU    25 XFSZ    26 VTALRM  27 PROF    28 WINCH
+	29 POLL    30 PWR     31 SYS     
+
+	<kill -9 PID> will terninate the process PID
+	<kill -3 PID> if PID is for JVM it will respond by printinf a (java) thread dump
+	<kill %JOB_NUMBER> example <kill %1> will terminate the job id JOB_NUMBER, here job 1
+	Notice difference between kill -9 PID and kill %1 and kill $! :
+	<kill -9 PID> kills the process immediatly. State is Killed.
+	<kill %1> and <kill $!> terminates the process. Stated is Terminated.
+    <kill -9 `jps |grep -i jboss |awk '{print $1}'`>
+
+id - display current user information
+locate - (easy) find files/directories
+
+find - find files/directories
+    <find . -name "file"> will look for file under the current folder and its subfolders
+    <find . -type d -name "vars"> will look for folder (-d) named "vars" under current folder and its subfolders
+    <find . -type d -name "vars" -exec touch {}/main.yml \;> 
+        -exec let us execute commands on find results.
+        {} refers to a result
+        \; tels find about the end of the command to run
+        Having said that, the previous find/exec command will look look for folders "vars" under current folder 
+        and its subfolders and then will create a file 'main.yml' inside the "vars" folder.
+    <find . -type f -exec sed -i 's/kibana/logstash/g' {} \;> replaces all occurences of 'kibana' in files in the current folder by 'logstash'
+
+rename - rename multiple file names
+    <rename 's/elasticsearch/kibana/g' ./elasticsearch*> renames all files in ./elasticsearch* substuting 'elasticsearch' with 'kibana'.
+
+top - displays current memory usage (content) 
+nslookup - DNS information for a particular adress
+ping - check if a server is reachable
+
+telnet - check if port is open and listening on remote host
+	<telnet 172.17.0.2 80> check if port 80 is open and listening on 172.17.0.2
+
+uptime - system up time
+
+sudo - run a command as superuser or another user
+	<sudo service apache2 start> will run service command on behalf of superuser (root)
+	<sudo -u kelousami touch file> will create a file as user kelousami
+
+service - run a system V init script
+    <sudo service nginx status> display status information of service nginx 
+    <sudo service --status-all> list all services with status information 
+        [+] started_service_name
+        [-] stopped_service_name
+
+date - display system date 
+ifconfig - display network interfaces (adapters) details
+
+ifup - Brings up network interface(s)
+	<ifup eth1> Brings up the network interface eth1.
+	<ifup -a> will process all interfaces marked auto.
+
+ifdown - Takes down network interface(s)
+
+netstat - displays network information and statistics, sockets, port, bound address ..etc
+    <netstat -tulpn> shows protocols, addresses, ports, state of connections and pid/program
+                     -t|--tcp
+                     -u|--udp
+                     -n numeric ips, don't resolve hostnames
+                     -l listening server sockets
+                     -p program, show the PID of the program to which socket belongs.
+        Active Internet connections (only servers)
+        Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+        tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN      1556/systemd-resolv 
+        tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      14168/nginx: master 
+        tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      14168/nginx: master 
+        tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      2083/dnsmasq        
+
+ss - similar to netstat, it prints socket statistics, ports, program ..etc
+    
+
+uname - system OS version and distribution details
+	<uname -a> displays all information provided by uname such as linux kernel version, distriubution version, hostname, architecture ..
+	<uname -r> displays linux kernel release number (kernel version)
+
+sysctl - configure kernel parameters at runtime.
+    the parameters are those listed in /proc/sys/
+    <sysctl -a> dispaly all currently available values
+    <sysctl vm.max_map_count> display the value of vm.max_map_count variable
+        vm.max_map_count = 65530
+    <sysctl -w variable=value> using w to change the value of a variable
+    to make the change permanent, we can update the sysctl.conf file under /etc/ and run <sysctl -p> command.
+
+systemctl - 
+    <systemctl list-unit-files> displays all services with status [disabled, enabled, static, masked, indirect, bad ..]
+    <systemctl list-units> displays all loaded units (services)
+    
+hostname - displays the host name
+scp - copy file to a remote host
+ssh - open a connection via ssh session to remote host via default port 22.
+ssh-keygen - generate and manage keys
+    <ssh-keygen -R hostname> removes all keys belonging to hostname from knwn_hosts file.
+
+clear - displays a clean screen in terminal in stdout
+history - displays the command line history
+whoami - displays current user name
+pwd - displays current working directory
+touch - create an empty file
+
+curl - command line (http) browser (get http content from remote server)
+	<curl -fsSL https://somefile/> get the file somefile (-L) and if fails does it silently (-f) no output file, 
+	and even when everything is ok no output (-s), and shows error if they occur (-S)
+
+wget - same as curl with different options (more complex)
+   <wget --header "Cookie: param=value" http://somefile>
+   <wget --header "Cookie: oraclelicense=accept-securebackup-cookie"http://download.oracle.com/otn-pub/java/jdk/8u121-b13/e9e7ea248e2c4826b92b3f075a80e441/jdk-8u121-linux-x64.rpm>
+
+unzip - uncompress zip package
+
+tar - assemble several files in one archive (no compression), it's an archive utility. (TAR=Tape ARchive). See the manual for all the options including deleting from archive ..
+	<tar -cf tape.tar tapetarget/> this creates (-c) a tar file named (-f) tape.tar and put the directory tapetarget/ and its content in the archive.
+	notice no use of v option here. v is only for verbose information.
+	<tar -tf tape.1.tar> displays the content of the archive (thanks to -t). 
+	<tar -xf tape.tar> extracts the content of the archive
+	<tar -xf tape.tar --directory=test/> extracts the content of the archive to target directory test/ instead of current one
+	<tar -cvz -f tapetarget.tar.gz tapetarget/> creates and compress (gzip) the archive tapetarget.tar.gz with the content of tapetarget/
+	<tar -xvz -f tapetarget.tar.gz> extracts and uncompress (gzip) the content of the archive
+	<tar -xvj -f tapetarget.tar.bz2> extracts and uncompress (bzip2) the content of the archive
+		(bzip2 has better compression ratio than gzip, but it's quite slower, especially while compressing)
+
+gzip - compress and uncompress files. Notice that a directory is only compressed thru tar, for example: <tar -cvz -f tapetarget.tar.gz tapetarget/>
+
+diff - displays difference between two files/streams
+	<diff <(COMMAND1) <(COMMAND2)> displays the difference between the results of COMMAND1 and 
+	COMMAND2, for example :
+		$ diff <(df -h) <(df -i -h)
+
+du - displays file space usage (options include dispalying times of last modification / access, inodes instead of blocks, files depths ..)
+	<du -a . | sort -n> sorts the files(thanks to -a) and direcroties from the less to greater space usage.
+	<du -d 1 .> displays the space usage of the first level of files and foldres (no sub-directories) of the current one (.)
+		
+sort - sort function
+
+help - displays help for shell builtin commands
+
+zip/unzip - compress/decompress files
+
+apt-get - download and install packages with their dependencies
+	<apt-get update> syncronizes the system with remote sources listed in /etc/apt/sources.list
+	<apt-get upgrade> (to be done after update), will upgrade the packages already installed on the system. No removal. No dependecies walking thru to upgrade them.
+	<apt-get dist-upgrade> will do same as upgrade, but will also walk thru dependecies and upgrade them as well. It also removes some packages when needed.
+	<apt-get install A_Package> will install the last version available of the package A_Package available from source defined in /etc/apt/sources.list.
+	<apt-cache search php7.0> will list all the packages available for php7.0 (update should be lanched before)
+
+apt-add-repository - adds (or removes via option -r) repository into /etc/apt/sources.list or /etc/apt/sources.list.d
+
+apt-key - APT key management utility
+	<apt-key add keyfile> will add the keyfile to the list of trusted keys.
+
+lsb_release - displays linux distribution specific information (add -s option to any option to show display in short format)
+	<lsb_release -c> yakkety is the codename of ubuntu's current release
+	<lsb_release -r> 16.10 is the release of the current ubuntu system
+    LSB stands for Linux Standard Base. Based on POSIX, SUS and other
+    standards, it aims to increase compatibility amoung Linux distributions and
+    enable software applications to run on any compliant system (even in binary
+    form).
+
+parted(gparted) - Partition manipulation program
+	/!\ if you made mistakes when partitioning disk, this program (available as iso) is helpful
+
+gpg - encrypt/decrypt and sign/verify files
+
+tabs
+echo 
+column
+
+
+
+Files and direcrories I have knowledge of 
+-----------------------------------------
+/     - Primary hierarchy root directory of the entire file system hierarchy.
+
+/bin  - essential command binaries that need to be available in single user mode for all users.
+       for example, cat, ls and cp.
+
+/sbin - essential system binaries. for example, fsck, init and route.
+
+/lib  - essential libraries for commands in /bin and /sbin.
+
+/dev  - device files and special files location. 
+        we have block devices and character devices. 
+        block devices mainly for data, they hold or store data. (/dev/sda for example, which is the first SCSI devices such as HDD, cd-rom on laptops ..)
+        character devices are for communication, transit or transfer data. (/dev/psaux for example, for PS/2 devices such as mice and keyboards ..)
+
+/etc  - Host-specific system-wide configuration files.
+/etc/hosts - Local naming service for hosts
+/etc/network/interfaces - Network interfaces definitions.
+/etc/sudoers and /etc/sudoers.d - Defines who can run what command as what user.
+    /!\ if you missed up with files under sudoers and/or sudoers.d you won't be able to run sudo anymore. 
+        The solution is 
+        - boot linux in recovery mode and login as root
+        - make filesystem writable
+        - make /etc/sudoers.d and/or /etc/sudoers belong to root and writable
+        - make changes and reboot normally
+
+/run  - run-time variable data: information about the running system since the last boot.
+        for example, currently logged-in users and running daemons.
+
+/usr  - Secondary hierarchy for read-only user data; contains the majority of user utilities and applications. 
+/usr/bin    - non essential command binaries (not needed in single user mode) for all users. 
+/usr/sbin   - non essential system binaries. for example, daemons for network-services.
+/usr/lib    - libraries for the binaries in /usr/bin and /usr/sbin 
+/usr/share  - Architecture-independent (shared) data.
+
+/var/ - variable files, whose content is expected to continually change during normal operation of the system.
+        for example, log files, spool files and temporary e-mail files.
+/var/lib    - State information. Persistent data modified by programs as they run. for example, databases and  packaging system metadata.
+/var/log    - log files, various logs. 
+/var/lock   - Lock files, which are keeping track of resources currently in use.
+/var/run    - is no more used, it's a symbolic link var/run -> /run/.
+
+/opt  - Optional application software packages.
+
+/proc   - virtual filesystem providing process and kernel information as files.
+/proc/PID/fd - list all file descriptors opened and used by the process
+	for example let's say 26273 is apache2 root PID, we can easily list all FDs in use 
+	<sudo ls -l /proc/26273/fd>
+	lr-x------ 1 root root 64 janv. 22 04:09 0 -> /dev/null
+	l-wx------ 1 root root 64 janv. 22 04:09 1 -> /dev/null
+	l-wx------ 1 root root 64 janv. 22 04:09 2 -> /var/log/apache2/error.log
+	lrwx------ 1 root root 64 janv. 22 04:09 3 -> socket:[206516]
+	lrwx------ 1 root root 64 janv. 22 04:09 4 -> socket:[206517]
+	lr-x------ 1 root root 64 janv. 22 04:09 5 -> pipe:[207379]
+	l-wx------ 1 root root 64 janv. 22 04:09 6 -> pipe:[207379]
+	l-wx------ 1 root root 64 janv. 22 04:09 7 -> /var/log/apache2/other_vhosts_access.log
+	l-wx------ 1 root root 64 janv. 22 04:09 8 -> /var/log/apache2/access.log
+	lrwx------ 1 root root 64 janv. 22 04:09 9 -> /tmp/.ZendSem.ysehQV (deleted)
+
+~/.ssh/
+    private keys files 
+    public keys files
+    knwon_hosts file
+    authorized_hosts file
+
+
+Shell scripting
+---------------
+
+In order to check argument are being passed and prompt usage message:
+ [ $# -eq 0 ] && { echo "Usage: $0 argument"; exit 1; }
+
+In order to concatenate two strings:
+ foo="Je"
+ foo+=" suis"
+ echo $foo
+    Je suis
+
+Appendix
+--------
+
+1. About command chaining 
+-------------------------
+
+$ echo 1 && { echo 2 & } && echo 3 && echo 4
+In the above echo 1 runs in foreground but echo 2 runs background.
+
+Note that the && after echo 2 may not be doing what you think. Consider:
+
+$ echo 1 && { false & } && echo 3 && echo 4
+1
+[2] 28445
+3
+4
+
+The above shows that echo 3 runs even though the second command false returns failure. This is because the return code for the background process is not available when the decision to start echo 3 is made.
+
+Let's consider your more realistic example:
+
+$ compile && { run server & } && run test 1 && run test 2 && kill server
+
+run test 1 will start regardless of whether run server succeeded or failed. Worse than that, run test 1 may start before run server has finished setting up the server. A quick fix is to delay run test 1 by enough time that you are confident that run server has finished doing its setup:
+
+compile && { run server & } && sleep 1 && run test 1 && run test 2 && kill server
+Alternatively, you would need to know something about run server so that you can test its successful setup.
+
+Background
+
+- The braces, {...}, create a list. Thus the construct { echo 2 & } allows us to run echo 2 with the effect of the operator & confined to just the commands in the list.
+- && is bash's logical and. The command following the && is run only if the prior command succeeds, that is, returns with code 0.
+
+
+
+
+
+

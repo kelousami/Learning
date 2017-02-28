@@ -1,0 +1,15 @@
+curpath=$(cd $(dirname "$0") && pwd)
+#echo curpath is $curpath filename is $(basename "$0")
+
+## Default paths:
+test "$BIN" || BIN=$(cd $curpath/.. && pwd)
+test "$VAR" || VAR=$(cd $curpath/../../var && pwd)
+test "$ETC" || ETC=$(cd $curpath/../../etc && pwd)
+
+
+Usage: $SCRIPTNAME [ -d ] {start|stop|status|restart|reload|force-reload|check} $_usage_mods_
+
+ -d  start requested module(s) in debug mode, only useful with start|restart
+
+
+

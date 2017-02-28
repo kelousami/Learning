@@ -1,0 +1,76 @@
+Algorithms may be classified 
+
+By implementation
+
+    Rescursive algorithms
+        invokes itself repeatedly until a certain condition matches. 
+        use repetitive constructs such as loops
+        use additional data structures such as stacks
+
+    Serial, parallel or distributed
+        some problems have no parallel algorithms, and are called inherently 
+        serial problems.parallel or distributed algorithms taks advantages of 
+        several processors working together at the same time.
+        
+    Deterministic vs non-deterministic
+        deterministic algorithms solve the problem with exact decision at every
+        step.
+        non-deterministic algorithms use heuristics to make guesses accurate, 
+        as they solve problems via guessing.
+
+    Exact or approximate
+        approximation algorith seek approximation that is close to true
+        solution instead of exact solution.
+
+By design paradigm
+
+    Brute-force or exhaustive search
+        naive method of trying evey possible solution to see which is the best.
+   
+    Divide and conquere (and its variant Decrease and conquere)
+        reduce the problem into smaller instances of the same problem. smaller
+        instances are subproblems but not necessarily identical. if they are
+        identical, then we talk about decrease and conquere.
+        one exmaple of divide and conquere is merge sorting. 
+        one example of decrease and conquere is binary search algorithm.
+
+    Search and enumeration 
+        for problems that can be modeled as problems or graphs. 
+        graph exploration algithm specefies rules for moving around a graph.
+        example are search algorithms, brach and bound enumeration and
+        backtracking.
+
+    Randomized algorithms
+        choices are made randomly or pseudo-randomly. 
+        useful for finding approximate solutions for problems where finding
+        exact solutions are impractical.
+
+    Transform and conquere
+        also called reduction of complexity.
+        the problem is transformed into one with a lower algorithm complexity
+
+By complexity
+    
+    algorithms may be classified by the amount of time they need to complete
+    compared to their input size.
+
+    Constant time
+        the time needed by the algorithm is the same, regardless of the input
+        size.
+        for example access to an array element.
+
+    Linear time
+        time is proportional to input size.
+        an example is traversing a list
+
+    Logarithmic time 
+        time is logarithmic function of input size
+        example is binary search algorithm
+    
+    Polynomial time
+        time is a power of the input size
+        example is bubble sort algorithm which has quadratic time complexity
+
+    Exponential time
+        time is exponential function of the input size.
+        exmpale is brute-force search

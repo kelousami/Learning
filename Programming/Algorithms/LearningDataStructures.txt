@@ -1,0 +1,28 @@
+Data structures are ways of organizing data in computer science.
+
+Data structures are implementation of abstract data types
+
+Basic data structures include :
+
+Arrays
+    a number of elements in a specific order.
+    typically same type.
+    access to elements is done via index.
+    may be fixed-lenght or resizable.
+    advantage is random-access.
+    insert and retrieve are slow as they require relocation of other elements.
+    
+Linked lists
+    linear collection of elements (called nodes) of any type.
+    any node has a value and a pointer to the next node.
+    insertion and removal are advantages. 
+    random-access slower as it requires traversing list seeking for the element
+    to be accessed.
+
+Records
+    a value containing other values, called fields or members
+
+Classes
+    contains records and methods that apply to those records
+
+

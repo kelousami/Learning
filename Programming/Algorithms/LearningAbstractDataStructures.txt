@@ -1,0 +1,390 @@
+Abstract data types may be defined as class of objects whose logical
+behavior is defined by a set of values and a set of operations.
+
+Defining abstract data types, may be done via 'imperative-stytle definition' or
+'functional-style definition'.
+
+The imperative style sees ADTs as mutable entities. Therefore, the order in
+which operations are applied is important.
+
+The functional style use functions that take arguments including the state of
+entity (ADT) and return result including the new state. The functions can be
+applied as many time as possible on the same arguments, they always return the
+same resutlt (and state).
+
+Typical operations on ADT
+-------------------------
+(from functional style)
+    compare(s,t) 
+        tests whether two instances are equivalent in some sense.
+    hash(s) 
+        computes some hash function from the instance state.
+    print(s) or show(s) 
+        produces human-readable representation of the instance state.
+
+(from primitive style)
+    create() 
+        yields a new instance of the ADT.
+    initialize(s) 
+        prepares the newly created instance for further operation or resets 
+        it to some initial state.
+    copy(s, t)
+        puts instance s in a state equivalent to that of t.
+    clone(t)
+        creates a new instance s and copy(s, t)
+    free(s) or destroy(s)
+        reclaims the memory and any other resources used by s.
+
+Example of ADTs
+---------------
+    Container
+    ---------
+        ADTs whose instances are collections of other objects. 
+        
+        Exmpale 
+            java collections framework
+        
+        Properties
+            access
+                way of accessing objects of the container.
+                for arrays, its index.
+                for stacks its lifo
+                for queues its fifo
+            storage 
+                way of storing objects of the container
+            traversal
+                way of traversing objects of the container
+
+        Methods (to implement)
+            create empty container (contructor)
+            insert objects into the container
+            delete objects from the container
+            delete all objects from the container (clear)
+            access the objects in the container
+            number of objects in the container (count)
+            
+    List
+    ----
+        Also called sequence.
+        ADTs that represent countable number of ordered values, where same
+        value may occur more than once.
+        Basic example of container.
+        Values contained in a list are also called items.
+        Item may also be data structure (not primitive data type) and implement
+        abstract lists, such as linked lists.
+
+        Example
+            Linked lists 
+                pointer to next, which specifies order, and value
+                my be singly-linked (next) or doubly-linked (next, previous)
+            Arrays 
+                index and value 
+                order is specified by indexes
+            Trees
+                
+
+        Methods (to implement)
+            containers methods
+            isEmpty ?
+            prepend
+            append
+            headOfList returns the first item
+            tailfOfLit returns all items but the first one
+
+    Set
+    ---
+        Unordered collection of non-repeated values.
+        values are called elements.
+        Sets can be static or dynamic.
+        Static sets are immutable, do not change after they are constructed.
+        Dynamic sets allow elements to be inserted or deleted afeter
+        construction.
+
+        Methods (to implement)
+            static sets
+                is_element_of(x,S)
+                is_empty(S)
+                size(S) or cardinality(S)
+                enumerate(S) returns a list of S elements in some arbitrary order.
+                iterate(S) returns a function that returns one more element of S at
+                    each call in some arbitrary order
+                build(x1, x2, .., xn) creates a set with values x1, x2, .., xn
+            dynamic sets
+                create()
+                create_with_capacity(n) capable to hold up to n elements.
+                add(S,x)
+                remove(S,x)
+                capacity(S) returns the maximum number of elements that S can
+                    hold.
+
+    Multiset
+    --------
+        Kind of set that allows multiple occurence of 'equal' (say same) elements. 
+        if equal elements are identical, they are just counted, not really
+        inserted. if equal elements are equivalents, they are inserted as
+        separate elements.
+        Called also bag.
+        
+        Example
+        In java, third party apache commons collections provide Bag. Also in
+        java, Google Guava provides Multiset interface.
+        In python, collections.Counter is similar to multiset.
+
+
+    Map
+    ---
+        Collection of key-value pairs, for which a key appears at most once.
+        Several names are given to this ADT 
+            associative array
+            map
+            dictionary
+            symbol table
+        
+        Operations
+            Add ot insert
+            Reassign replace the value given to certain key-value pair with
+                another
+            Remove or delete
+            Lookup find the value of a given key
+
+        Implementations
+            Hash table
+                implemented using an array along with hash function.
+                the keys are hashed, thus transformed into table index.
+
+            Search tree
+                a tree is a an ADT made up of nodes or vertices and edges
+                without having any cycle.
+                null or empty tree has no nodes.
+                not empty tree has root node and potentially many levels of
+                additional nodes.
+                
+                in order for a tree to function as search tree, the keys for
+                each node must be greater than any keys in subtrees on the left
+                and less than any keys in subtrees on the right.
+
+                a binary search tree is a binary tree (at most 2 children for
+                each node) where every node's key is greater than any keys in
+                the left subtree of that node, and where the same node's key 
+                is less than any keys in the right subtree of the same node.
+
+
+    Multimap
+    --------
+        is a generalized form of map, where more than one value is possible 
+        for a given key.
+        often implemented as a map with values as lists or sets.
+
+        Example
+            Querystrings in web forms may have multiple values with single
+            field.
+            For java Apache Commons Collections provide Multimap interface.
+
+    Graph
+    -----
+        is a finite set of nodes (point, vertices - pl. of vertex) and pairs of these nodes.
+        pairs may be ordered in case of directed graph, and they are called
+        arrows, directed edges, directed lines or directed arcs.
+        unordered pairs describe undirected graphs; pairs are then simply 
+        called edges, arcs or lines.
+        edges may have some edge value, as symbloci link, or numeric attribute
+        (cost, capacity, length, etc.)
+
+        Operations
+            adjacent (G, x, y) if there is edge from x to y.
+            neighbors (G, x) list vertices y such there is edge from x to y.
+            add_vertex (G, x)
+            remove_vertex (G, x)
+            add_edge (G, x, y)
+            remove_edge (G, x, y)
+            get_vertex_value (G, x)
+            set_vertex_value (G, x, v)
+            get_edge_value (G, x, y)
+            set_edge_value (G, x, y, v)
+
+        Implementation (representation)
+            Adjacency list (prefered implementation)
+                Vertices as records or objects, they store list of adjacent
+                vertices.
+            Adjacency matrix
+                2-dimensional matrix, rows and columns are source and
+                destination vertices. Data on edges must be stored externally.
+            Incidence matrix
+                2-dimensional boolean matrix, rows and columns are vertices and
+                edges. entries indicate if vertex at a row is incident to edge
+                at a column.
+
+    Stack
+    -----
+        collection of elements with two principal operations: push, which adds
+        an element to collection and pop which removes the last added element.
+        LIFO is an alternative name of the stack.
+        Overflow state may describe a full stack, when such boundary is set.
+
+        Operations
+            pop
+            push
+            peek give access to the top without modifying the stack.
+
+        Implementation
+            array or linked list.
+            most important in the interface, not allowing the user to modify
+            the stack but to use pop, push and alternatively peek.
+
+        Example
+            java.util.Stack (specialization of Vector)
+
+    Queue
+    -----
+        collection of entities in order with only two operations allowed:
+        enqueue, to add new entity to the rear terminal position, and dequeue
+        to remove an entity from the front terminal position of the collection.
+        FIFO is an alternative description of a queue.
+        may be used as implementation of a buffer.
+        not like stack, queue does not have capacity.
+
+        Operations
+            enqueue
+            dequeue
+            peek
+
+        Implementation
+            array 
+                the probleme of fixed lenght array may be solved by making the
+                array circural (if n is size, indices may be calculated modulo
+                n). in some cases, the only capacity limit is memory
+                constraints, in other a bounded queue is used and queue
+                overflow may occur when trying to add element onto a full
+                queue. queue underflow may occur when trying to remove an
+                element from empty queue.
+            linked list
+                especially a doubly linked list is the natural choice for
+                queues. 
+                singly linked list may be enhanced by keeping pointer to last
+                node in addition to the first one.
+
+        Example
+            Java has Queue interface a part of J2SE5.0.
+
+
+    Priority queue
+    --------------
+        elements have priority.
+        element with high priority is served before element with low priority.
+        if two elements have same priority, then they are served according
+        their order in the queue (fifo)
+
+        stacks and queues are examples of priority queues.
+        in stacks, the priority is monotonically increasing each time a new
+        element is inserted (pushed). last has always higher priority.
+        in quques, the priority is monotonically decreasing each time a new
+        element in enqueued. last has always lower priority.
+
+        Operations
+            insert_with_priority
+            pull_highest_priority_element
+
+        Implementation
+            heap (prefered choice) and its variants (pairing heap, Fibonacci
+            heap, etc.)
+            array
+            linked list
+
+
+    Double-endend queue
+    -------------------
+        called dequeue, abbreviated to deque pronounced deck.
+        generalization of a queue, where elements can be added or removed from
+        either the front (head) or the back (tail).
+        also called head-tail linked list (refering to a specific
+        implementation)
+
+        subtypes
+            input-restricted 
+                deletion can by made from both ends, but insertion at one only.
+            output-restricted
+                insertion can be made at both ends, but deletion from one only.
+
+        Operations
+            enqueue
+            dequeue
+            peek
+            push_back
+            push_front
+            pop_back
+            pop_front
+            back - peek last
+            front - peek first
+
+        Example
+            ArrayDeque in java
+
+    Double-endend priority queue
+    ----------------------------
+        DEPQ or bouble-ended heap
+        it is a priority queue that allows removal of high priority elements
+        (maximun) and low priority elements (minimum) according to some
+        ordering on the keys (items) stored in the structue.
+        When two elements have same priority, then the element inserted first
+        is chosen.
+
+        Operations
+            isEmpty()
+            size()
+            getMin()
+            getMax()
+            put(x)
+            removeMin()
+            removeMax()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

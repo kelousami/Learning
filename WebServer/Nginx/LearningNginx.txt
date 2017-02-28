@@ -1,0 +1,226 @@
+
+Nginx was developed as a solution to C10K problem.
+
+C10K problem: It's time for web servers to handle ten thousand clients simultaneously.
+
+(lun. 30 janv. 2017 12:13:29 CET) : 
+ -> Nginx stable version is nginx-1.10.2 released 2016-10-18
+ -> Nginx last (mainline) version is nginx-1.11.9 released 2017-01-24
+
+Install for ubuntu 
+------------------
+Add repository in /etc/apt/sources.list
+	deb http://nginx.org/packages/ubuntu/ codename nginx
+	deb-src http://nginx.org/packages/ubuntu/ codename nginx
+
+Apt-get update and install
+	$ sudo apt-get update 
+	$ sudo apt-get install nginx
+
+If apache or any other process using default http server port 80, then stop it before starting nginx
+	$ sudo service apache2 stop
+	$ sudo service nginx start
+	$ sudo service nginx status
+
+	● nginx.service - A high performance web server and a reverse proxy server
+	   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+	   Active: active (running) since lun. 2017-01-30 13:08:49 CET; 6min ago
+	  Process: 11054 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+	  Process: 11043 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+	 Main PID: 11057 (nginx)
+	    Tasks: 9 (limit: 4915)
+	   Memory: 7.8M
+	      CPU: 196ms
+	   CGroup: /system.slice/nginx.service
+		   ├─11057 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+		   ├─11059 nginx: worker process
+		   ├─11061 nginx: worker process
+		   ├─11063 nginx: worker process
+		   ├─11065 nginx: worker process
+		   ├─11066 nginx: worker process
+		   ├─11067 nginx: worker process
+		   ├─11068 nginx: worker process
+           └─11070 nginx: worker process
+
+	janv. 30 13:08:49 kelousami-GL502VS systemd[1]: Starting A high performance web server and a reverse proxy server...
+	janv. 30 13:08:49 kelousami-GL502VS systemd[1]: Started A high performance web server and a reverse proxy server.
+
+The process displays: 
+
+	$ ps -ef | grep nginx
+	root     11057     1  0 13:08 ?        00:00:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+	www-data 11059 11057  0 13:08 ?        00:00:00 nginx: worker process
+	www-data 11061 11057  0 13:08 ?        00:00:00 nginx: worker process
+	www-data 11063 11057  0 13:08 ?        00:00:00 nginx: worker process
+	www-data 11065 11057  0 13:08 ?        00:00:00 nginx: worker process
+	www-data 11066 11057  0 13:08 ?        00:00:00 nginx: worker process
+	www-data 11067 11057  0 13:08 ?        00:00:00 nginx: worker process
+	www-data 11068 11057  0 13:08 ?        00:00:00 nginx: worker process
+	www-data 11070 11057  0 13:08 ?        00:00:00 nginx: worker process
+
+Nginx files:
+	--sbin-path=/usr/sbin/nginx
+	--conf-path=/etc/nginx/nginx.conf
+	--error-log-path=/var/log/nginx/error.log
+	--http-log-path=/var/log/nginx/access.log
+	--pid-path=/var/run/nginx.pid
+	--lock-path/var/run/nginx.lock
+
+Basics 
+------
+
+Nginx has one master process and several worker processes.
+The master process reads the configuration and evaluates it. It also maintains the worker processes.
+Worker processes do the actual job of serving user requests.
+The number of worker processes can be static or automatically adjusted to the number of available cores (CPU).
+Nginx can be used to serve static content or to act as a proxy server.
+
+
+Nginx actions include stop, quit, reload and reopen :
+	<nginx -s stop> will fast shuttdown nginx
+	<nginx -s quit> will gracefull shuttdown nginx
+	<nginx -s reload> will reload configuration file
+	<nginx -s reopen> will reopen log files
+
+In order to check the configuration
+	<nginx -t> will print check result of nginx.conf
+	nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+	nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+Any change made to configuration will not be applied until the configuration is reloaded 
+	<nginx -s reload> or until a complete restart of nginx
+
+If configuration file contains error, the master process continues working with old configuration and worker processes. Otherwise, it requests old worker processes to
+shuttdown and starts new worker processes with the new configuration.
+
+Structure of configuration file 
+-------------------------------
+	# default is main context
+
+	# this is a block directive, called context.
+	# example of contexts: http, server, location, events
+	context {  
+		# this is another context
+		context {
+			# this is a simple directive
+			directive value;
+		}
+	}
+
+Example of a structure
+
+	# http context belong to main context
+	http {
+		# server context resides in http one 
+		server {
+			# location context in server one
+			location / {
+				root /data/www;
+			}
+		}
+	} 
+
+See example of serving static content and acting as proxy server under ~/nginx/
+
+To see if nginx is configured to support debugging (and other information) use <nginx -V>. 
+Note that <nginx -v> only shows version, while <nginx -V> is more verbose.
+
+Pre-built Linux package with debug capability exists under name "nginx-debug" 
+	
+It is possible to have multiple (virtual) servers listening on the same port 80. They can be differentiated by server_name.
+Nginx, if unable to decide to which server it has to send the request, will then use the first one in the config file.
+This behavior may be changed by explecitly indicating which one is default_server.
+If the port is not set explicitly to 80 (I mean same port) then it's the default_server, even if another (virtual) server is marked as default_server.
+
+
+Nginx as load balancer
+----------------------
+
+Use upstream directive inside http (or https) context to declare a list of backen servers.
+Load balancing by default is done in "round-robin" fashion. Other methods exist, including "least-connected" and "ip-hash".
+
+A simple configuration, with default round-robin load balancing strategy
+
+http {
+    upstream backend {
+        server backend-server1; # hostname or ip
+        server backend-server2;
+        server backend-server3;
+    }
+
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://backend;
+        }
+    }
+}
+
+In order not to overload a backend server that may take longer time to handle user requests, use least-connected strategy. 
+In this case, nginx will send new requests to the server with the lower number of connections (dealing with previous user requests).
+For example :
+    
+    upstream backend {
+        least_conn;
+        server backend-server1; 
+        server backend-server2;
+        server backend-server3;
+    }
+
+In order to send requests from the same client to same server (in case we want to use the same session), we need to use the last strategy, "ip-hash".
+In this case, nginx use client ip to determine which server to send request to.
+
+    upstream backend {
+        ip_hash;
+        server backend-server1; 
+        server backend-server2;
+        server backend-server3;
+    }
+
+Finally, the 3 strategies may be enhanced or influenced by using server weights. This give a chance to direct more or less traffic to a paricular server.
+
+    upstream backend {
+        server backend-server1; weight=3;
+        server backend-server2;
+        server backend-server3;
+    }
+
+In the example above, for every 5 requests, the first server will get 3, second will get 1 and last one will get 1 request.
+
+Nginx offers the possibility check health of backend servers. If a backend server fails to respond as many times as max_fails within fail_timeout, then the server
+is marked as failed. After (another) fail_timeout interval of time following the servger failure, nginx will start again probing the server with live user requests. 
+If the sevver responds then it's marked live.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

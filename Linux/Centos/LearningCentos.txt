@@ -1,0 +1,92 @@
+$ cat /etc/centos-release
+CentOS Linux release 7.3.1611 (Core)
+
+<ifconfig> is obsolete, and is not found in minimal versions of RHEL 7 and its clones like Centos 7, Oracle Linux 7 ..
+Alternative command is <ip> 
+In order to view details of the network interface cards:
+$ ip addr
+or :
+$ ip link
+And for more statistics, use -s option :
+$ ip -s link
+(if <ip> is not installed, like for docker boxes, user <yum install iproute>)
+
+In order to install ifconfig, use:
+$ yum -y install net-tools
+
+In order to add new user (as root)
+$ adduser ansible
+$ passwd ansible (meaning we will create password for the user ansible)
+$ cat /etc/passwd
+...
+ansible:x:1000:1000::/home/ansible:/bin/bash
+
+In order to give root privileges to newly added user
+$ yum install sudo
+
+The file /etc/sudoers is now available, but read-only :
+$ ls -l /etc/sudoers
+[root@edc5e78b294f /]# ll /etc/sudoers
+-r--r----- 1 root root 3907 Dec  6 15:15 /etc/sudoers
+
+We first need to add write access to it:
+$ chmod u+w /etc/sudoers
+
+Make sure this line is commented out 
+%wheel  ALL=(ALL)       ALL
+
+Retrieve write access
+$ chmod u-w /etc/sudoers
+
+Add newly created user to wheel group
+$ usermod -aG wheel ansible
+
+Check everything by
+$ su ansible -
+$ sudo whoami
+(provide ansible user password, the output will then be 'root')
+
+(alternatively we can use echo "ansible ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers  )
+
+
+Install systemd
+systemd is a replacement of SysV, for system and service management.
+
+
+Install ssh
+$ yum -y install openssh-server openssh-clients
+
+Make copy of original sshd config file
+$ cp /etc/ssh/sshd_config /etc/ssh/ssh_config.orig
+
+Comment out the port on which SSH listens
+$ grep 22 /etc/ssh/sshd_config
+Port 22
+
+
+In order to install correctly under Centos, the date/time (and timezone) need to be set correctly, otherwise we get this error:
+<< error: unpacking of archive failed: cpio: read failed >>
+$ sudo timedatectl set-timezone "Europe/Paris"
+
+In order to install an RPM -example JDK8
+$ sudo rpm -Uvh jdk-8u121-linux-x64.rpm
+or
+$ sudo yum localinstal jdk-8u121-linux-x64.rpm
+
+To check if a module is installed 
+
+$ sudo rpm -qa | grep "jdk1.8.0_121"
+or
+$ sudo yum list installed jdk1.8.0_121
+
+
+In order to check if a package is installed 
+$ rpm -qa|grep postgresql
+    postgresql96-libs-9.6.2-1PGDG.rhel7.x86_64
+    postgresql96-9.6.2-1PGDG.rhel7.x86_64
+    postgresql96-server-9.6.2-1PGDG.rhel7.x86_64
+or
+$ rpmquery postgresql96-server
+postgresql96-server-9.6.2-1PGDG.rhel7.x86_64
+
+

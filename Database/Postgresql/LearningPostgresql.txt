@@ -1,0 +1,95 @@
+[root@postgresql1 9.6]# cat initdb.log 
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C".
+The default database encoding has accordingly been set to "SQL_ASCII".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/pgsql/9.6/data ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting dynamic shared memory implementation ... posix
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    /usr/pgsql-9.6/bin/pg_ctl -D /var/lib/pgsql/9.6/data/ -l logfile start
+
+[root@postgresql1 9.6]# ps -ef | grep post
+postgres   692     1  0 11:31 ?        00:00:00 /usr/pgsql-9.6/bin/postmaster -D /var/lib/pgsql/9.6/data/
+postgres   693   692  0 11:31 ?        00:00:00 postgres: logger process   
+postgres   695   692  0 11:31 ?        00:00:00 postgres: checkpointer process   
+postgres   696   692  0 11:31 ?        00:00:00 postgres: writer process   
+postgres   697   692  0 11:31 ?        00:00:00 postgres: wal writer process   
+postgres   698   692  0 11:31 ?        00:00:00 postgres: autovacuum launcher process   
+postgres   699   692  0 11:31 ?        00:00:00 postgres: stats collector process   
+root       742   704  0 11:38 pts/0    00:00:00 grep --color=auto post
+[root@postgresql1 9.6]# 
+[root@postgresql1 9.6]# 
+[root@postgresql1 9.6]# su - postgres
+-bash-4.2$ id
+uid=26(postgres) gid=26(postgres) groups=26(postgres)
+-bash-4.2$ psql
+psql (9.6.2)
+Type "help" for help.
+
+postgres=# help
+You are using psql, the command-line interface to PostgreSQL.
+Type:  \copyright for distribution terms
+       \h for help with SQL commands
+       \? for help with psql commands
+       \g or terminate with semicolon to execute query
+       \q to quit
+postgres=# CREATE SCHEMA test;
+CREATE SCHEMA
+postgres=# CREATE USER app PASSWORD p@ssword ;
+ERROR:  syntax error at or near "p"
+LINE 1: CREATE USER app PASSWORD p@ssword ;
+                                 ^
+postgres=# CREATE USER app PASSWORD 'p@ssword' ;
+CREATE ROLE
+postgres=# GRANT ALL ON SCHEMA test TO app ;
+GRANT
+postgres=# GRANT ALL ON ALL TABLES IN SCHEMA test TO app;
+GRANT
+postgres=# 
+postgres=# \q
+-bash-4.2$ adduser 
+.bash_profile  .psql_history  9.6/           
+-bash-4.2$ adduser app
+-bash: /usr/sbin/adduser: Permission denied
+-bash-4.2$ id
+uid=26(postgres) gid=26(postgres) groups=26(postgres)
+-bash-4.2$ logout
+[root@postgresql1 9.6]# adduser app
+[root@postgresql1 9.6]# su - app
+[app@postgresql1 ~]$ psql -d postgres
+psql (9.6.2)
+Type "help" for help.
+
+postgres=> CREATE TABLE test.test (coltest varchar(20));
+CREATE TABLE
+postgres=> insert into test.test (coltest) values ('It works!);
+postgres'>     
+postgres'> 
+postgres'> commit;
+postgres'> SELECT * FROM test.test;
+postgres'> \q
+postgres'> ^C
+postgres=> insert into test.test (coltest) values ('It works!');
+INSERT 0 1
+postgres=> select * from test.test;
+  coltest  
+-----------
+ It works!
+(1 row)
+
+postgres=> 
+

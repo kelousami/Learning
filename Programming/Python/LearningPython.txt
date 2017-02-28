@@ -1,0 +1,343 @@
+From docs.python.org
+--------------------
+
+Numbers
+-------
+    + - * / are builin operations for add, substruct, multiply and divide
+    Numeric types include int, float. Decimal and Franction are alsp supported. Complex numbers as well.
+    Whenever / (devision) is used, the result is float (6 / 2 = 3.0). To get int use // (6//2=3).
+    ** is used to get powers. 2 ** 3 = 8.
+    multiplication has precedence than addition, thus 3 * 2 + 1 = 7 and -3**2 = -(3**2) = -9 
+    % is used to get remainder. 5 % 2 = 1.
+    _ is used to get last printed expression.
+    round get the number rounded with a given numer of digits round(3.152, 2) = 3.15 
+  
+    Order of operations PEMDAS --> Parentheses Exponent Multiplication Division Addition Subtraction
+
+    math.ceil(number) gets the closest int part of number
+
+    to convcert numer to string, we can use str(number)
+
+Strings
+-------
+    Use "" or '' alike to write strings. But be consistent.
+    print() in Python3 has default newline behavior (no need to add \n)
+    \ is used to escape special characters "don\'t" is don't.
+    
+    >>> test = 'first \n Second'
+    'first \n Second'
+    >>> print(test)
+    first
+    second
+
+    use """ or ''' for multi-ine text
+    to concatenate use + or just one string after the other. 'Py'+'thon'='Py' 'thon'='Python'
+    if w='Python' then 
+        w[0]=[-6]='P' 
+        w[-1]=w[5]='n' 
+        w[0:2]=w[:2]='Py' because firt index is included and the last is excluded
+        w[2:6]=w[2:]='thon'
+        w[:3] + w[3:] = w = 'Python'
+        w[-2:]='on' from the second-last to the end
+        w[start_index:end_index] is called slice of w
+        w[p_out_of_range] --> IndexError:string index out of range
+        slices are handled gracefully
+            w[:999]='Python'
+            w[999:]=''
+    
+    Strings are immutable
+    if a string is needed it is created, we can not do w[2] = 'J'
+    len(w) gives the lenght of the string w = 6
+
+    print(aString, bString) will add a space between them, so no need to do print(aString, ' ', bString)
+
+    slice formula: variable[ start : end+1 ]
+    if 
+        table = ['a', 'b', 'c', 'd']
+    then
+        table[1:3] = ['b', 'c']
+        table[0:5] = ['a', 'b', 'c', 'd']
+    but 
+        table[5] = IndexError: list index out of range
+    
+
+Lists
+-----
+    Lists might have items of different types [1,3,True,6.5]
+    >>> squares = [1, 4, 9, 16]
+    >>> squares
+    [1, 4, 9, 16]
+    Like strings, lists may be sliced squares[-3:] and indexed squares[0]
+    Copy of list may be obtained squares[:]
+    Lists may be concatenated
+    >>> sqaures + [25, 36, 49, 64] 
+    [1, 4, 9, 16, 25, 36, 49, 64]
+    Lists are mutable
+    We can remove elements from list 
+    >>> squares[2:4] = []
+    >>> squares
+    [1, 4, 25, 36, 49, 64]
+    >>> len(squares)
+    6
+    We can nest lists if n=[a, [b1, b2], c] so n[1][1] = b2
+    
+    methods on lists
+    ----------------
+        append adds new items at the end of a list
+            squares.append(81)
+        insert insert items at a specific index
+            squates.insert(0,1)
+        more methods include sort, extend, remove, index, count, reverse .. see documentation.
+        mothods that modify a mutable data structure in Python (as lists) have a default return of None.
+        lists may be used as stacks, using append() to add to the top of the stack  and pop() without index to retrieve an item. Stacks are LIFO structure. 
+        lists may also be used to implement queues (FIFO structure) but are not efficient, as the list has to be shifted whenever the first item retrieved.
+        Instead use collections.deque - from collections import deque .. see documentation.
+    
+    operations on lists
+    -------------------
+        indexing        []
+        concatenation   +
+        repetition      *   for example [[1, True]] * 2 = [[1, True], [1, True]]
+                            but [[1, True] * 2]
+        membership      in
+        legth           len
+        slicing         [:]
+
+Tuples
+------
+    (,,,) comma-separated betwwen paratheses
+    Just like strings, tulpes are immutable. 
+    Tuples are heterogeneous sequences of data.
+    >>> myTuple = (2, True, 4.35)
+    Same operations on lists apply to tuples, including index access, slicing..
+    Because they are immutable we can not change elements.
+    >>> myTuple[1] = False 
+    TypeError: 'tuple' object does not support item assignment
+
+Sets
+----
+    {,,,}
+    Just like tuples, but does not allow duplicates.
+    Unortdered collection of immutable objects.
+    {3,6,"cat",4.5,False}
+
+    Operation on sets
+    -----------------
+        membership      in
+        length          len
+        union |         aset | bset     returns new set with all elements 
+                                        from both sets
+        intersection &  aset & bset     returns a new set with only elements
+                                        in commun
+        -               aset - bset     returns a set with elements in aset not
+                                        in bset
+        <=              aset <= bset    asks whether all elements of aset are
+                                        in bset
+
+Dictionaries
+------------
+    {key1:val1, key2:val2}
+    Collections of key-value pairs
+
+    Operations on dictionaries
+    --------------------------
+        []              adict[key]      returns the value associated with
+                                        key, otherwise error.
+        in              key in adict    returns True if key is in dictionary
+
+        del             del adict[key]  removes the entry from the dictionary
+
+    Methods on dictionaries
+    -----------------------
+        keys()          returns the keys of a dict
+        values()        returns the values of dict
+        items()         returns key-value pairs in a dict
+        get(key)        returns the value of key, otherwise None
+        get(key, alt)   returns the value of key, otherwise alt
+
+
+
+Keywords
+--------
+    while   if      elif    else    break   continue    pass    end
+    def     return  True    False   in      raise       lambda  self
+    None    from    import  for     del     try         except  finally
+    with    as      class   not     or      and         list         
+
+    end = prevent print from adding new line?
+        >>>print('one', end=',')
+        >>>print('two')
+        
+
+Variables
+---------
+    We can assign multiple variables at once like a,b = 0,1 in this cas, a=0 and b=1
+    
+
+Control flow
+------------
+    Conditions, true and false
+    --------------------------
+        < less than     > greater than      <= less than or equals
+        == equals       != not equals       >= greater than or equals
+        zero is False
+        empty string or empty list are False
+        anything with non-zero length is True
+
+    while
+    -----
+        while cond:
+            do1
+            do2
+        code
+
+        we use indentation in Python to group a lisy of statements (not {})
+        
+    if
+    --
+        if cond1:
+            do1
+            do2
+        elif cond2:
+            do3
+            do4
+        else:
+            do5
+            do6
+        code
+        
+        There's no switch nor case. Use if .. elif .. elif instead.
+    
+    for
+    ---
+        for el in list:
+            do1
+            do2
+
+        with range() which iterates over sequence of numbers. it generates as many number as given. if n is param, will generates 0 .. n-1.
+            for i in range(5)
+                print(i, end=' ')
+        result is 0 1 2 3 4 
+        two ranges are possible
+            range(stop)
+            range(start, stop[, step]) --> for example range(-10, -100, -30) => -10, -40, -70
+        there is another function enumerate() which is used in most cases
+
+        there are iterable objects and iterators. for and list() are iterators. the object returned by range() is iterable.
+        >>> list(range(4))
+        [0,1,2,3]
+
+        break my be use to break out the smallest enclosing for or while loop
+        else may also be used with for (and while?), when no break occurs
+        continue let the next iteration of the loop to run
+        pass does nothing, just pass. when a code is mandatory but we don't yet have the implementation, just put pass.
+
+Functions
+---------
+    def function_name(params):
+        """ doc as will be in docstrings """
+        body
+    
+    Function may return nothing or specify a return. 
+    If return has no parameter, then it's None.
+
+    Functions may have default values of parameters.
+    def f(a, b=1):
+        ..
+
+    Cautions:
+    ---------
+        1. If param is reference to mutable object -such list, then whenever that object changed the parameter is changed.
+            def f(a, L=[]):
+                L.append(a)
+                reurn L
+            print(f(1))
+            print(f(2))
+        This will print
+            [1]
+            [1,2]
+
+        2. Defaut values are evaluated once, in what's called defining scope.
+            i=1
+            def f(arg=i)
+                print(arg)
+            i=2
+            f()
+        This will print 1. Because arg of f has been set at the begining, in the defining scope.
+
+    Function, in relation to its argument, may be called in two ways
+        1. positional arguments, with respect of the order in which function has been defined.
+           def f (a, b, c):
+               ...
+           f(1, 2) means f(a=1, b=2, c=default)
+        2. keyword argument, using the keywords given in the function signature.
+           f(b=3, a=2) means f(a=2, b=3, c=default)
+
+    Special parameters of the form *name and **name may be passed as formal and final formal parameters. 
+    *name denotes any set of arguments. (a, b, c ..)
+    **name denotes any set of keywords. (a=5, b='Some', ..)
+    Example 
+        def f (pays, *ville, **commerce):
+            ..
+        f may be called like f(maroc, 'rabat', 'casa', cafe='marhaba', boutique='7anout')
+    after *name, the only param that could be added are keyword-only arguments.
+
+    *-operator may also be used to unpack set of argumant out of à list or tuple.
+    if args = [1,4] then list(range(*args)) will be [1,2,3]
+    same, if args = (1,4) then list(range(*args)) will be [1,2,3]
+
+    **-operator, just like *-operator, may be used to unpack keyword arguments from a dictionnary.
+    if d={"k1":"v1", "k2":"v2", "k3":"v3"} and def f(k1, k2, k3) then f(**d) is f(k1=v1, k2=v2, k3=v3)
+
+    Lambda expressions
+    ------------------
+        Are small anounymous function, normally nested in other functions. They are restricted to a single expression.
+        Example:
+            def increment(n):
+                return lambda x : x + n
+            f = increment(10)
+            f(2) --> return 12
+        
+Coding conventions
+------------------
+    - use PEP8 as codign style.
+    - 4-space indentation, no tabs
+    - 79 line lenght max
+    - Use CamelCase for classes and lower_case_with_underscores for functions and methods.
+    - Always user self as the name of the first method argument.
+    - Some of this may be automated in ~/.vimrc, check it out
+
+    - Syntax check: add python.vim under ~/.vim/syntax folder
+    - 
+    
+PEP - Python Enhancement Proposals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

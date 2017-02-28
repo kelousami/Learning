@@ -1,0 +1,122 @@
+Ansible is a provisionning and configuration management software.
+
+Ansible is a simple automation language describing IP application infrastructure in Ansible Playbooks
+Ansible is also an automation engine that runs Ansible Playbooks.
+
+Ansible is agentless, no server daemon, no client daemon.
+
+Communication between controlling machine and nodes is done over SSH (using default OpenSSH).  The communication is done through JSON.
+
+Configuration, deployment and orchestration is described in playbooks. 
+Playbooks format is YAML.
+Playbooks contain plays. 
+Plays contain tasks. 
+Tasks call modules.
+Tasks run sequentially.
+Handlers are triggered by tasks and are run once, at the end of plays.
+
+For example:
+---
+- name: install and start httpd
+  hosts: web
+  vars:
+   http_port: 80
+
+  tasks:
+  - name : install httpd
+    yum: name=httpd state=latest
+
+  handlers:
+  - name: restart httpd
+    service: name=httpd state=restared
+
+This is a play named 'install and start httpd'. It applies to 'web' group of servers in the inventory. It has a variable, http port. 
+It has a task named 'install httpd'. The task has a module 'yum' which will do the work: install 'latest' version of 'httpd'. 
+
+Idempotency (and reliability in general) is of the design goals of ansible. An operation made multiple times MUST always place the system into the same state.
+
+Inventory is where nodes are listed. Default location is /etc/ansible/hosts. It's a list of hosts (identified by ip or hostname) which may or not be placed inside a group (for example [web] or [webservers])
+Inventory can by static (list of ip/hosts) of dynamic (ranges, from dynamic lists).
+
+Ansible does its work via modules. They are unit work of ansible, writen in any standard scripting language (python, perl, ruby or bash, etc.)
+Syntax (standard structure) of modules is <module: directive1=value directive2=value>
+
+
+How to run ansible
+------------------
+
+    1. Ad-hoc (from CLI): 
+        ansible <inventory_serve_or_group> -m <module> -a <module_arguments> -i <inventory_file> -f <number_of_core_cpu> -u <username> --private-key=<path_to_key>
+
+    2. Playbooks: 
+        ansible-playbook
+
+    3. Automation framework such as Ansible Tower
+
+
+Install
+-------
+
+1- Create ssh key to communicate with servers
+$ cd ~/.ssh
+$ ssh-keygen -t rsa -b 4096 -C "ansible-first-test" -f ansible_key
+We will have our private key and the public one
+ ansible_key
+ ansible_key.pub
+
+2- Add the public key to .ssh/authorized_keys file of target servers
+
+3- Install Ansible
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+
+4- Archive /etc/ansible/hosts (to hosts.orig) and create a new one with those lines
+[web]
+172.17.0.2
+172.17.0.3
+172.17.0.4
+
+5- Play with it!
+example, let's ping localhost on three servers:
+$ ansible all -m ping -a "ping -c 3 localhost" -u root --private-key=~/.ssh/ansible_key
+
+or install nginx on three servers
+$ ansible all -m yum -a "pkg=epel-release state=latest" -u root --private-key=~/.ssh/ansible_key
+$ ansible all -m yum -a "pkg=nginx state=latest" -u root --private-key=~/.ssh/ansible_key
+
+and start nginx on all servers
+$ ansible all -m service -a "name=nginx state=started" -u root --private-key=~/.ssh/ansible_key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

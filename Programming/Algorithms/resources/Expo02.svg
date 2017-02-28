@@ -1,0 +1,1587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="500"
+   height="500"
+   viewBox="0 0 500 500"
+   id="svg2816">
+  <desc
+     id="desc2818">Produced by GNUPLOT 4.2 patchlevel 6  </desc>
+  <defs
+     id="defs2820" />
+  <g
+     id="g2836"
+     style="color:#ffffff;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2838"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2840"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2842"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 447.5,0"
+       id="path2844" />
+  </g>
+  <g
+     id="g2846"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2848"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path2850" />
+    <g
+       transform="translate(239.5,415.9)"
+       id="g2852"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2854">0</text>
+    </g>
+  </g>
+  <g
+     id="g2856"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2858"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,334 447.5,0"
+       id="path2860" />
+  </g>
+  <g
+     id="g2862"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2864"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,334 -5.6,0 m 5.6,0 5.6,0"
+       id="path2866" />
+    <g
+       transform="translate(239.5,339.6)"
+       id="g2868"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2870">1</text>
+    </g>
+  </g>
+  <g
+     id="g2872"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2874"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,257.6 447.5,0"
+       id="path2876" />
+  </g>
+  <g
+     id="g2878"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2880"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,257.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path2882" />
+    <g
+       transform="translate(239.5,263.2)"
+       id="g2884"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2886">2</text>
+    </g>
+  </g>
+  <g
+     id="g2888"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2890"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,181.3 447.5,0"
+       id="path2892" />
+  </g>
+  <g
+     id="g2894"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2896"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,181.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path2898" />
+    <g
+       transform="translate(239.5,186.9)"
+       id="g2900"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2902">3</text>
+    </g>
+  </g>
+  <g
+     id="g2904"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2906"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,105 447.5,0"
+       id="path2908" />
+  </g>
+  <g
+     id="g2910"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2912"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,105 -5.6,0 m 5.6,0 5.6,0"
+       id="path2914" />
+    <g
+       transform="translate(239.5,110.6)"
+       id="g2916"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2918">4</text>
+    </g>
+  </g>
+  <g
+     id="g2920"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2922"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,28.6 447.5,0"
+       id="path2924" />
+  </g>
+  <g
+     id="g2926"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2928"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,28.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path2930" />
+    <g
+       transform="translate(239.5,34.2)"
+       id="g2932"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2934">5</text>
+    </g>
+  </g>
+  <g
+     id="g2936"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2938"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,479 0,-458"
+       id="path2940" />
+  </g>
+  <g
+     id="g2942"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2944"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path2946" />
+    <g
+       transform="translate(26.2,443.9)"
+       id="g2948"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2950">-3</text>
+    </g>
+  </g>
+  <g
+     id="g2952"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2954"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,479 0,-458"
+       id="path2956" />
+  </g>
+  <g
+     id="g2958"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2960"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path2962" />
+    <g
+       transform="translate(100.8,443.9)"
+       id="g2964"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2966">-2</text>
+    </g>
+  </g>
+  <g
+     id="g2968"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2970"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,479 0,-458"
+       id="path2972" />
+  </g>
+  <g
+     id="g2974"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2976"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path2978" />
+    <g
+       transform="translate(175.4,443.9)"
+       id="g2980"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2982">-1</text>
+    </g>
+  </g>
+  <g
+     id="g2984"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2986"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="M 250,479 250,21"
+       id="path2988" />
+  </g>
+  <g
+     id="g2990"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g2992"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path2994" />
+    <g
+       transform="translate(250,443.9)"
+       id="g2996"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text2998">0</text>
+    </g>
+  </g>
+  <g
+     id="g3000"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3002"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,479 0,-458"
+       id="path3004" />
+  </g>
+  <g
+     id="g3006"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3008"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3010" />
+    <g
+       transform="translate(324.5,443.9)"
+       id="g3012"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3014">1</text>
+    </g>
+  </g>
+  <g
+     id="g3016"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3018"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,479 0,-458"
+       id="path3020" />
+  </g>
+  <g
+     id="g3022"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3024"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3026" />
+    <g
+       transform="translate(399.1,443.9)"
+       id="g3028"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3030">2</text>
+    </g>
+  </g>
+  <g
+     id="g3032"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3034"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,479 0,-458"
+       id="path3036" />
+  </g>
+  <g
+     id="g3038"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3040"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3042" />
+    <g
+       transform="translate(473.7,443.9)"
+       id="g3044"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3046">3</text>
+    </g>
+    <g
+       transform="translate(332,208.4)"
+       id="g3048"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3050">e</text>
+    </g>
+    <g
+       transform="translate(309.6,33.3)"
+       id="g3052"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3054">10</text>
+    </g>
+    <g
+       transform="translate(332,270.9)"
+       id="g3056"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3058">2</text>
+    </g>
+    <g
+       transform="translate(332,370.1)"
+       id="g3060"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3062">½</text>
+    </g>
+  </g>
+  <g
+     id="g3064"
+     style="color:#ff0000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,406.5 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.8,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.8,-0.1 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.8,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.8,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.8,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.8,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.8,-0.5 0.9,-0.6 0.9,-0.5 0.9,-0.5 0.9,-0.6 0.9,-0.5 0.9,-0.6 0.9,-0.6 0.9,-0.5 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.7 0.9,-0.6 0.9,-0.6 0.9,-0.7 0.9,-0.6 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.6 0.9,-0.7 0.9,-0.7 0.9,-0.8 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.8 0.8,-0.8 0.9,-0.7 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.9 0.9,-0.8 0.9,-0.8 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-1 0.9,-0.9 0.9,-1 0.9,-1 0.9,-0.9 0.9,-1 0.9,-1 0.9,-1.1 0.9,-1 0.9,-1.1 0.9,-1 0.9,-1.1 0.9,-1.1 0.9,-1.1 0.8,-1.1 0.9,-1.1 0.9,-1.2 0.9,-1.1 0.9,-1.2 0.9,-1.2 0.9,-1.1 0.9,-1.3 0.9,-1.2 0.9,-1.2 0.9,-1.3 0.9,-1.2 0.9,-1.3 0.9,-1.3 0.9,-1.4 0.9,-1.3 0.9,-1.3 0.9,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.5 0.9,-1.4 0.9,-1.5 0.9,-1.5 0.9,-1.5 0.9,-1.6 0.9,-1.5 0.9,-1.6 0.9,-1.6 0.8,-1.6 0.9,-1.7 0.9,-1.6 0.9,-1.7 0.9,-1.7 0.9,-1.7 0.9,-1.7 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.9 0.9,-1.9 0.9,-1.9 0.9,-1.9 0.9,-2 0.9,-2 0.9,-2 0.9,-2 0.9,-2.1 0.9,-2 0.9,-2.2 0.9,-2.1 0.9,-2.1 0.9,-2.2 0.9,-2.2 0.9,-2.3 0.9,-2.2 0.9,-2.3 0.9,-2.3 0.8,-2.4 0.9,-2.3 0.9,-2.4 0.9,-2.5 0.9,-2.4 0.9,-2.5 0.9,-2.5 0.9,-2.6 0.9,-2.6 0.9,-2.6 0.9,-2.6 0.9,-2.7 0.9,-2.7 0.9,-2.8 0.9,-2.7 0.9,-2.8 0.9,-2.9 0.9,-2.9 0.9,-2.9 0.9,-2.9 0.9,-3 0.9,-3 0.9,-3.1 0.9,-3.1 0.9,-3.1 0.9,-3.2 0.9,-3.2 0.9,-3.2 0.9,-3.3 0.9,-3.3 0.9,-3.4 0.8,-3.4 0.9,-3.4 0.9,-3.5 0.9,-3.5 0.9,-3.6 0.9,-3.6 0.9,-3.7 0.9,-3.7 0.9,-3.7 0.9,-3.8 0.9,-3.9 0.9,-3.9 0.9,-3.9 0.9,-4 0.9,-4 0.9,-4.1 0.9,-4.1 0.9,-4.2 0.9,-4.2 0.9,-4.3 0.9,-4.3 0.9,-4.4 0.9,-4.4 0.9,-4.5 0.9,-4.6 0.9,-4.6 0.9,-4.6"
+       id="path3066" />
+  </g>
+  <g
+     id="g3068"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3070"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3072"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3074"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 447.5,0"
+       id="path3076" />
+  </g>
+  <g
+     id="g3078"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3080"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path3082" />
+    <g
+       transform="translate(239.5,415.9)"
+       id="g3084"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3086">0</text>
+    </g>
+  </g>
+  <g
+     id="g3088"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3090"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,334 447.5,0"
+       id="path3092" />
+  </g>
+  <g
+     id="g3094"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3096"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,334 -5.6,0 m 5.6,0 5.6,0"
+       id="path3098" />
+    <g
+       transform="translate(239.5,339.6)"
+       id="g3100"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3102">1</text>
+    </g>
+  </g>
+  <g
+     id="g3104"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3106"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,257.6 447.5,0"
+       id="path3108" />
+  </g>
+  <g
+     id="g3110"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3112"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,257.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path3114" />
+    <g
+       transform="translate(239.5,263.2)"
+       id="g3116"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3118">2</text>
+    </g>
+  </g>
+  <g
+     id="g3120"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3122"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,181.3 447.5,0"
+       id="path3124" />
+  </g>
+  <g
+     id="g3126"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3128"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,181.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path3130" />
+    <g
+       transform="translate(239.5,186.9)"
+       id="g3132"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3134">3</text>
+    </g>
+  </g>
+  <g
+     id="g3136"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3138"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,105 447.5,0"
+       id="path3140" />
+  </g>
+  <g
+     id="g3142"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3144"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,105 -5.6,0 m 5.6,0 5.6,0"
+       id="path3146" />
+    <g
+       transform="translate(239.5,110.6)"
+       id="g3148"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3150">4</text>
+    </g>
+  </g>
+  <g
+     id="g3152"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3154"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,28.6 447.5,0"
+       id="path3156" />
+  </g>
+  <g
+     id="g3158"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3160"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,28.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path3162" />
+    <g
+       transform="translate(239.5,34.2)"
+       id="g3164"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3166">5</text>
+    </g>
+  </g>
+  <g
+     id="g3168"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3170"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,479 0,-458"
+       id="path3172" />
+  </g>
+  <g
+     id="g3174"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3176"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3178" />
+    <g
+       transform="translate(26.2,443.9)"
+       id="g3180"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3182">-3</text>
+    </g>
+  </g>
+  <g
+     id="g3184"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3186"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,479 0,-458"
+       id="path3188" />
+  </g>
+  <g
+     id="g3190"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3192"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3194" />
+    <g
+       transform="translate(100.8,443.9)"
+       id="g3196"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3198">-2</text>
+    </g>
+  </g>
+  <g
+     id="g3200"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3202"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,479 0,-458"
+       id="path3204" />
+  </g>
+  <g
+     id="g3206"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3208"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3210" />
+    <g
+       transform="translate(175.4,443.9)"
+       id="g3212"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3214">-1</text>
+    </g>
+  </g>
+  <g
+     id="g3216"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3218"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="M 250,479 250,21"
+       id="path3220" />
+  </g>
+  <g
+     id="g3222"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3224"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3226" />
+    <g
+       transform="translate(250,443.9)"
+       id="g3228"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3230">0</text>
+    </g>
+  </g>
+  <g
+     id="g3232"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3234"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,479 0,-458"
+       id="path3236" />
+  </g>
+  <g
+     id="g3238"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3240"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3242" />
+    <g
+       transform="translate(324.5,443.9)"
+       id="g3244"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3246">1</text>
+    </g>
+  </g>
+  <g
+     id="g3248"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3250"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,479 0,-458"
+       id="path3252" />
+  </g>
+  <g
+     id="g3254"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3256"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3258" />
+    <g
+       transform="translate(399.1,443.9)"
+       id="g3260"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3262">2</text>
+    </g>
+  </g>
+  <g
+     id="g3264"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3266"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,479 0,-458"
+       id="path3268" />
+  </g>
+  <g
+     id="g3270"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3272"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3274" />
+    <g
+       transform="translate(473.7,443.9)"
+       id="g3276"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3278">3</text>
+    </g>
+    <g
+       transform="translate(332,208.4)"
+       id="g3280"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3282">e</text>
+    </g>
+    <g
+       transform="translate(309.6,33.3)"
+       id="g3284"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3286">10</text>
+    </g>
+    <g
+       transform="translate(332,270.9)"
+       id="g3288"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3290">2</text>
+    </g>
+    <g
+       transform="translate(332,370.1)"
+       id="g3292"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3294">½</text>
+    </g>
+  </g>
+  <g
+     id="g3296"
+     style="color:#008000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.2 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.8,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,0 0.8,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,0 0.9,0 0.9,0 0.8,-0.1 0.9,0 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.8,0 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.8,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.8,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.6 0.9,-0.5 0.9,-0.5 0.9,-0.6 0.8,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-1 0.9,-0.9 0.9,-1.1 0.9,-1 0.9,-1 0.9,-1.1 0.9,-1.1 0.9,-1.2 0.9,-1.2 0.9,-1.2 0.9,-1.2 0.9,-1.3 0.9,-1.3 0.8,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.5 0.9,-1.5 0.9,-1.6 0.9,-1.6 0.9,-1.6 0.9,-1.7 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.9 0.9,-1.9 0.9,-2 0.9,-2.1 0.9,-2.1 0.9,-2.2 0.9,-2.2 0.9,-2.3 0.9,-2.4 0.9,-2.4 0.9,-2.5 0.9,-2.5 0.9,-2.7 0.9,-2.7 0.9,-2.8 0.9,-2.9 0.9,-2.9 0.9,-3 0.9,-3.1 0.9,-3.2 0.8,-3.3 0.9,-3.4 0.9,-3.5 0.9,-3.6 0.9,-3.7 0.9,-3.7 0.9,-3.9 0.9,-4 0.9,-4.1 0.9,-4.2 0.9,-4.4 0.9,-4.4 0.9,-4.6 0.9,-4.8 0.9,-4.8 0.9,-5 0.9,-5.1 0.9,-5.3 0.9,-5.4 0.9,-5.6 0.9,-5.7 0.9,-5.9 0.9,-6 0.9,-6.3 0.9,-6.4 0.9,-6.5 0.9,-6.8 0.9,-6.9 0.9,-7.2 0.9,-7.3 0.9,-7.6 0.8,-7.8 0.9,-7.9 0.9,-8.2 0.9,-8.5 0.9,-8.7 0.9,-8.9 0.9,-9.1 0.9,-9.5 0.9,-9.7 0.9,-9.9 0.9,-10.3 0.9,-10.5 0.3,-3.7"
+       id="path3298" />
+  </g>
+  <g
+     id="g3300"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3302"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3304"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3306"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 447.5,0"
+       id="path3308" />
+  </g>
+  <g
+     id="g3310"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3312"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path3314" />
+    <g
+       transform="translate(239.5,415.9)"
+       id="g3316"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3318">0</text>
+    </g>
+  </g>
+  <g
+     id="g3320"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3322"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,334 447.5,0"
+       id="path3324" />
+  </g>
+  <g
+     id="g3326"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3328"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,334 -5.6,0 m 5.6,0 5.6,0"
+       id="path3330" />
+    <g
+       transform="translate(239.5,339.6)"
+       id="g3332"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3334">1</text>
+    </g>
+  </g>
+  <g
+     id="g3336"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3338"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,257.6 447.5,0"
+       id="path3340" />
+  </g>
+  <g
+     id="g3342"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3344"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,257.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path3346" />
+    <g
+       transform="translate(239.5,263.2)"
+       id="g3348"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3350">2</text>
+    </g>
+  </g>
+  <g
+     id="g3352"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3354"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,181.3 447.5,0"
+       id="path3356" />
+  </g>
+  <g
+     id="g3358"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3360"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,181.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path3362" />
+    <g
+       transform="translate(239.5,186.9)"
+       id="g3364"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3366">3</text>
+    </g>
+  </g>
+  <g
+     id="g3368"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3370"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,105 447.5,0"
+       id="path3372" />
+  </g>
+  <g
+     id="g3374"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3376"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,105 -5.6,0 m 5.6,0 5.6,0"
+       id="path3378" />
+    <g
+       transform="translate(239.5,110.6)"
+       id="g3380"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3382">4</text>
+    </g>
+  </g>
+  <g
+     id="g3384"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3386"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,28.6 447.5,0"
+       id="path3388" />
+  </g>
+  <g
+     id="g3390"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3392"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,28.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path3394" />
+    <g
+       transform="translate(239.5,34.2)"
+       id="g3396"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3398">5</text>
+    </g>
+  </g>
+  <g
+     id="g3400"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3402"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,479 0,-458"
+       id="path3404" />
+  </g>
+  <g
+     id="g3406"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3408"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3410" />
+    <g
+       transform="translate(26.2,443.9)"
+       id="g3412"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3414">-3</text>
+    </g>
+  </g>
+  <g
+     id="g3416"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3418"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,479 0,-458"
+       id="path3420" />
+  </g>
+  <g
+     id="g3422"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3424"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3426" />
+    <g
+       transform="translate(100.8,443.9)"
+       id="g3428"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3430">-2</text>
+    </g>
+  </g>
+  <g
+     id="g3432"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3434"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,479 0,-458"
+       id="path3436" />
+  </g>
+  <g
+     id="g3438"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3440"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3442" />
+    <g
+       transform="translate(175.4,443.9)"
+       id="g3444"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3446">-1</text>
+    </g>
+  </g>
+  <g
+     id="g3448"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3450"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="M 250,479 250,21"
+       id="path3452" />
+  </g>
+  <g
+     id="g3454"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3456"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3458" />
+    <g
+       transform="translate(250,443.9)"
+       id="g3460"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3462">0</text>
+    </g>
+  </g>
+  <g
+     id="g3464"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3466"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,479 0,-458"
+       id="path3468" />
+  </g>
+  <g
+     id="g3470"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3472"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3474" />
+    <g
+       transform="translate(324.5,443.9)"
+       id="g3476"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3478">1</text>
+    </g>
+  </g>
+  <g
+     id="g3480"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3482"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,479 0,-458"
+       id="path3484" />
+  </g>
+  <g
+     id="g3486"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3488"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3490" />
+    <g
+       transform="translate(399.1,443.9)"
+       id="g3492"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3494">2</text>
+    </g>
+  </g>
+  <g
+     id="g3496"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3498"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,479 0,-458"
+       id="path3500" />
+  </g>
+  <g
+     id="g3502"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3504"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3506" />
+    <g
+       transform="translate(473.7,443.9)"
+       id="g3508"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3510">3</text>
+    </g>
+    <g
+       transform="translate(332,208.4)"
+       id="g3512"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3514">e</text>
+    </g>
+    <g
+       transform="translate(309.6,33.3)"
+       id="g3516"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3518">10</text>
+    </g>
+    <g
+       transform="translate(332,270.9)"
+       id="g3520"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3522">2</text>
+    </g>
+    <g
+       transform="translate(332,370.1)"
+       id="g3524"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3526">½</text>
+    </g>
+  </g>
+  <g
+     id="g3528"
+     style="color:#0000ff;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,400.8 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.8,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,0 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.8,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.8,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.1 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.8,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.8,-0.3 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.2 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.8,-0.3 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.4 0.9,-0.3 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.8,-0.4 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.4 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.6 0.9,-0.5 0.9,-0.5 0.9,-0.5 0.9,-0.6 0.9,-0.5 0.9,-0.6 0.9,-0.5 0.8,-0.6 0.9,-0.5 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.5 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.6 0.9,-0.7 0.9,-0.6 0.9,-0.6 0.9,-0.7 0.9,-0.6 0.9,-0.6 0.9,-0.7 0.9,-0.7 0.9,-0.6 0.9,-0.7 0.9,-0.7 0.9,-0.6 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.7 0.9,-0.8 0.8,-0.7 0.9,-0.7 0.9,-0.8 0.9,-0.7 0.9,-0.8 0.9,-0.7 0.9,-0.8 0.9,-0.7 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.8 0.9,-0.9 0.9,-0.8 0.9,-0.8 0.9,-0.9 0.9,-0.8 0.9,-0.9 0.9,-0.8 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-0.9 0.9,-1 0.8,-0.9 0.9,-1 0.9,-0.9 0.9,-1 0.9,-1 0.9,-0.9 0.9,-1 0.9,-1 0.9,-1 0.9,-1 0.9,-1.1 0.9,-1 0.9,-1 0.9,-1.1 0.9,-1 0.9,-1.1 0.9,-1.1 0.9,-1.1 0.9,-1.1 0.9,-1.1 0.9,-1.1 0.9,-1.1 0.9,-1.1 0.9,-1.2 0.9,-1.1 0.9,-1.2 0.9,-1.1 0.9,-1.2 0.9,-1.2 0.9,-1.2 0.9,-1.2 0.8,-1.2 0.9,-1.3 0.9,-1.2 0.9,-1.3 0.9,-1.2 0.9,-1.3 0.9,-1.3 0.9,-1.3 0.9,-1.3 0.9,-1.3 0.9,-1.3 0.9,-1.3 0.9,-1.4 0.9,-1.3 0.9,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.4 0.9,-1.5 0.9,-1.4 0.9,-1.5 0.9,-1.5 0.9,-1.5 0.9,-1.5 0.9,-1.5 0.9,-1.5 0.9,-1.5 0.9,-1.6 0.9,-1.6 0.8,-1.5 0.9,-1.6 0.9,-1.6 0.9,-1.6 0.9,-1.7 0.9,-1.6 0.9,-1.7 0.9,-1.7 0.9,-1.6 0.9,-1.7 0.9,-1.8 0.9,-1.7 0.9,-1.7 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.8 0.9,-1.9 0.9,-1.8 0.9,-1.9 0.9,-1.9 0.9,-1.9 0.9,-1.9 0.9,-2 0.9,-1.9 0.9,-2 0.9,-2 0.9,-2 0.9,-2 0.8,-2.1 0.9,-2 0.9,-2.1 0.9,-2.1 0.9,-2.1 0.9,-2.2 0.9,-2.1 0.9,-2.2 0.9,-2.2 0.9,-2.2 0.9,-2.2 0.9,-2.2 0.9,-2.3 0.9,-2.3 0.9,-2.3 0.9,-2.3 0.9,-2.3 0.9,-2.4 0.9,-2.3 0.9,-2.4 0.9,-2.4 0.9,-2.5 0.9,-2.4 0.9,-2.5 0.9,-2.5 0.9,-2.5 0.9,-2.6 0.9,-2.5 0.9,-2.6 0.9,-2.6 0.9,-2.6 0.9,-2.7 0.8,-2.6 0.9,-2.7 0.9,-2.7 0.9,-2.8 0.9,-2.7 0.9,-2.8 0.9,-2.8 0.9,-2.8 0.9,-2.9 0.9,-2.9 0.9,-2.9 0.9,-2.9 0.9,-2.9 0.9,-3 0.9,-3 0.9,-3 0.9,-3.1 0.9,-3.1 0.9,-3.1 0.9,-3.1 0.9,-3.1 0.9,-3.2 0.9,-3.2 0.9,-3.2"
+       id="path3530" />
+  </g>
+  <g
+     id="g3532"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3534"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3536"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3538"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 447.5,0"
+       id="path3540" />
+  </g>
+  <g
+     id="g3542"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3544"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path3546" />
+    <g
+       transform="translate(239.5,415.9)"
+       id="g3548"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3550">0</text>
+    </g>
+  </g>
+  <g
+     id="g3552"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3554"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,334 447.5,0"
+       id="path3556" />
+  </g>
+  <g
+     id="g3558"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3560"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,334 -5.6,0 m 5.6,0 5.6,0"
+       id="path3562" />
+    <g
+       transform="translate(239.5,339.6)"
+       id="g3564"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3566">1</text>
+    </g>
+  </g>
+  <g
+     id="g3568"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3570"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,257.6 447.5,0"
+       id="path3572" />
+  </g>
+  <g
+     id="g3574"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3576"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,257.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path3578" />
+    <g
+       transform="translate(239.5,263.2)"
+       id="g3580"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3582">2</text>
+    </g>
+  </g>
+  <g
+     id="g3584"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3586"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,181.3 447.5,0"
+       id="path3588" />
+  </g>
+  <g
+     id="g3590"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3592"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,181.3 -5.6,0 m 5.6,0 5.6,0"
+       id="path3594" />
+    <g
+       transform="translate(239.5,186.9)"
+       id="g3596"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3598">3</text>
+    </g>
+  </g>
+  <g
+     id="g3600"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3602"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,105 447.5,0"
+       id="path3604" />
+  </g>
+  <g
+     id="g3606"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3608"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,105 -5.6,0 m 5.6,0 5.6,0"
+       id="path3610" />
+    <g
+       transform="translate(239.5,110.6)"
+       id="g3612"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3614">4</text>
+    </g>
+  </g>
+  <g
+     id="g3616"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3618"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,28.6 447.5,0"
+       id="path3620" />
+  </g>
+  <g
+     id="g3622"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3624"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,28.6 -5.6,0 m 5.6,0 5.6,0"
+       id="path3626" />
+    <g
+       transform="translate(239.5,34.2)"
+       id="g3628"
+       style="font-size:18.75px;text-anchor:end;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3630">5</text>
+    </g>
+  </g>
+  <g
+     id="g3632"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3634"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,479 0,-458"
+       id="path3636" />
+  </g>
+  <g
+     id="g3638"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3640"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 26.2,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3642" />
+    <g
+       transform="translate(26.2,443.9)"
+       id="g3644"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3646">-3</text>
+    </g>
+  </g>
+  <g
+     id="g3648"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3650"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,479 0,-458"
+       id="path3652" />
+  </g>
+  <g
+     id="g3654"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3656"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 100.8,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3658" />
+    <g
+       transform="translate(100.8,443.9)"
+       id="g3660"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3662">-2</text>
+    </g>
+  </g>
+  <g
+     id="g3664"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3666"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,479 0,-458"
+       id="path3668" />
+  </g>
+  <g
+     id="g3670"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3672"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 175.4,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3674" />
+    <g
+       transform="translate(175.4,443.9)"
+       id="g3676"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3678">-1</text>
+    </g>
+  </g>
+  <g
+     id="g3680"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3682"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="M 250,479 250,21"
+       id="path3684" />
+  </g>
+  <g
+     id="g3686"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3688"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 250,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3690" />
+    <g
+       transform="translate(250,443.9)"
+       id="g3692"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3694">0</text>
+    </g>
+  </g>
+  <g
+     id="g3696"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3698"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,479 0,-458"
+       id="path3700" />
+  </g>
+  <g
+     id="g3702"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3704"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 324.5,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3706" />
+    <g
+       transform="translate(324.5,443.9)"
+       id="g3708"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3710">1</text>
+    </g>
+  </g>
+  <g
+     id="g3712"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3714"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,479 0,-458"
+       id="path3716" />
+  </g>
+  <g
+     id="g3718"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3720"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 399.1,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3722" />
+    <g
+       transform="translate(399.1,443.9)"
+       id="g3724"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3726">2</text>
+    </g>
+  </g>
+  <g
+     id="g3728"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3730"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,479 0,-458"
+       id="path3732" />
+  </g>
+  <g
+     id="g3734"
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+  <g
+     id="g3736"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 473.7,410.3 0,5.6 m 0,-5.6 0,-5.6"
+       id="path3738" />
+    <g
+       transform="translate(473.7,443.9)"
+       id="g3740"
+       style="font-size:18.75px;text-anchor:middle;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3742">3</text>
+    </g>
+    <g
+       transform="translate(332,208.4)"
+       id="g3744"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3746">e</text>
+    </g>
+    <g
+       transform="translate(309.6,33.3)"
+       id="g3748"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3750">10</text>
+    </g>
+    <g
+       transform="translate(332,270.9)"
+       id="g3752"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3754">2</text>
+    </g>
+    <g
+       transform="translate(332,370.1)"
+       id="g3756"
+       style="font-size:18.75px;text-anchor:start;fill:#000000;stroke:none;font-family:Arial">
+      <text
+         id="text3758">½</text>
+    </g>
+  </g>
+  <g
+     id="g3760"
+     style="color:#00ffff;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+    <path
+       d="m 74.6,21 0.9,3.2 0.9,3.2 0.9,3.2 0.9,3.1 0.9,3.1 0.9,3.1 0.9,3.1 0.9,3.1 0.9,3 0.9,3 0.9,3 0.9,2.9 0.9,2.9 0.9,2.9 0.9,2.9 0.9,2.9 0.9,2.8 0.9,2.8 0.9,2.8 0.9,2.7 0.9,2.8 0.9,2.7 0.9,2.7 0.8,2.6 0.9,2.7 0.9,2.6 0.9,2.6 0.9,2.6 0.9,2.5 0.9,2.6 0.9,2.5 0.9,2.5 0.9,2.5 0.9,2.4 0.9,2.5 0.9,2.4 0.9,2.4 0.9,2.3 0.9,2.4 0.9,2.3 0.9,2.3 0.9,2.3 0.9,2.3 0.9,2.3 0.9,2.2 0.9,2.2 0.9,2.2 0.9,2.2 0.9,2.2 0.9,2.1 0.9,2.2 0.9,2.1 0.9,2.1 0.9,2.1 0.9,2 0.8,2.1 0.9,2 0.9,2 0.9,2 0.9,2 0.9,1.9 0.9,2 0.9,1.9 0.9,1.9 0.9,1.9 0.9,1.9 0.9,1.8 0.9,1.9 0.9,1.8 0.9,1.8 0.9,1.8 0.9,1.8 0.9,1.8 0.9,1.8 0.9,1.7 0.9,1.7 0.9,1.8 0.9,1.7 0.9,1.6 0.9,1.7 0.9,1.7 0.9,1.6 0.9,1.7 0.9,1.6 0.9,1.6 0.9,1.6 0.8,1.5 0.9,1.6 0.9,1.6 0.9,1.5 0.9,1.5 0.9,1.5 0.9,1.5 0.9,1.5 0.9,1.5 0.9,1.5 0.9,1.4 0.9,1.5 0.9,1.4 0.9,1.4 0.9,1.4 0.9,1.4 0.9,1.4 0.9,1.4 0.9,1.3 0.9,1.4 0.9,1.3 0.9,1.3 0.9,1.3 0.9,1.3 0.9,1.3 0.9,1.3 0.9,1.3 0.9,1.2 0.9,1.3 0.9,1.2 0.9,1.3 0.8,1.2 0.9,1.2 0.9,1.2 0.9,1.2 0.9,1.2 0.9,1.1 0.9,1.2 0.9,1.1 0.9,1.2 0.9,1.1 0.9,1.1 0.9,1.1 0.9,1.1 0.9,1.1 0.9,1.1 0.9,1.1 0.9,1.1 0.9,1 0.9,1.1 0.9,1 0.9,1 0.9,1.1 0.9,1 0.9,1 0.9,1 0.9,1 0.9,0.9 0.9,1 0.9,1 0.9,0.9 0.9,1 0.8,0.9 0.9,1 0.9,0.9 0.9,0.9 0.9,0.9 0.9,0.9 0.9,0.9 0.9,0.9 0.9,0.9 0.9,0.9 0.9,0.8 0.9,0.9 0.9,0.8 0.9,0.9 0.9,0.8 0.9,0.8 0.9,0.9 0.9,0.8 0.9,0.8 0.9,0.8 0.9,0.8 0.9,0.8 0.9,0.8 0.9,0.8 0.9,0.7 0.9,0.8 0.9,0.7 0.9,0.8 0.9,0.7 0.9,0.8 0.9,0.7 0.8,0.7 0.9,0.8 0.9,0.7 0.9,0.7 0.9,0.7 0.9,0.7 0.9,0.7 0.9,0.7 0.9,0.6 0.9,0.7 0.9,0.7 0.9,0.6 0.9,0.7 0.9,0.7 0.9,0.6 0.9,0.6 0.9,0.7 0.9,0.6 0.9,0.6 0.9,0.7 0.9,0.6 0.9,0.6 0.9,0.6 0.9,0.6 0.9,0.6 0.9,0.6 0.9,0.6 0.9,0.5 0.9,0.6 0.9,0.6 0.9,0.6 0.9,0.5 0.8,0.6 0.9,0.5 0.9,0.6 0.9,0.5 0.9,0.6 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.6 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.4 0.9,0.5 0.9,0.5 0.9,0.5 0.9,0.4 0.9,0.5 0.9,0.4 0.9,0.5 0.9,0.4 0.9,0.5 0.9,0.4 0.9,0.5 0.9,0.4 0.8,0.4 0.9,0.4 0.9,0.5 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.4 0.9,0.3 0.9,0.4 0.9,0.4 0.9,0.3 0.9,0.4 0.9,0.4 0.9,0.3 0.9,0.4 0.9,0.3 0.9,0.4 0.9,0.3 0.9,0.4 0.9,0.3 0.9,0.4 0.9,0.3 0.8,0.3 0.9,0.3 0.9,0.4 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.4 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.2 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.2 0.9,0.3 0.9,0.3 0.9,0.3 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.3 0.8,0.3 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.3 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.8,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.2 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.1 0.8,0.2 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.8,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.2 0.9,0.1 0.9,0 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.8,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0 0.9,0.1 0.9,0.1 0.9,0.1 0.9,0.1"
+       id="path3762" />
+  </g>
+  <g
+     id="g3764"
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter" />
+</svg>
