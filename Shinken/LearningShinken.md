@@ -67,6 +67,23 @@ contacts, contactgroups, commands, etc.
 Ojbect definition file is specified by cfg\_file and/or cfg\_dir in the main
 configuration file.
 
+Note that the main daemon is Shenkin daemon (which is actually shinken-arbiter
+daemon). It hasn't __ini__ file under /etc/shinken/daemons/ folder. Its __ini__
+section is actually included in main configuration file, shinken.cfg.
+
+cfg\_dir and/or cfg\_file inside main configuration file are read and considered
+by arbiter as __statements__. They order arbiter daemon to open the other configuration
+files speciefied by cfg\_dir and cfg\_file. Now if inside the other
+configuration files, there are other occurrences of cfg\_dir and/or cfg\_file,
+they are considered as __parameters__ and not as __statements__.
+
+Whith cfg\_dir and/or cfg\_file statements, all Shinken configuration is
+defined :
+- daemons
+- objects
+- resources
+
+
 
 ## Run 
 
