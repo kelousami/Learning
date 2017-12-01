@@ -184,10 +184,30 @@ the server and point local master branch at it
     $ git fetch origin
     $ git reset --hard origin/master
 
+> In order to 'checkout' a remote tag, first bring all tags and remotes
+    $ git fetch --all --tags --prune
+  Then check out the tag by running
+    $ git checkout tags/<tag_name> -b <branch_name>
+
+> In order to find a lost local commited changes do the following 
+  First diplay changes made locally 
+    $  git reflog
+  Then reset a change 
+    $ git reset -- hard 89a4780
 
 
-
-
+> Once a repo has been forked, in order to keep the forked updated, here are the steps:
+  First, add a new remote to the original repo 
+    $ git remote -v
+    $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+  Then, fetch the upstream
+    $ git fetch upstream
+  Then move to the desired branch, here master
+    $ git checkout master
+  Then merge from upstream 
+    $ git merge upstream/master
+  Finally the local repo can be pushed to remote
+    $ git push origin master
 
 
 
