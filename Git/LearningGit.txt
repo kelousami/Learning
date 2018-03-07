@@ -123,6 +123,9 @@ tracks
 > In order to switch back to master
     $ git checkout master
 
+> In order to compare to branches 
+    $ git diff master..feature_x
+
 > In order to merge branch "feature_x" to master (after checkout master)
     $ git merge feature_x
 
