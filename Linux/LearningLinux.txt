@@ -41,6 +41,8 @@ vi - text editing
 	<:put =strftime('%c')> will insert timestamp in the file buffer
 	<:set number> will show line numbers. To make it permanent, add <set number> to file ~/.vimrc
     <SHIFT+17 SHIFT+G> goto line 17 and <SHIFT+G> alone, goto end of file
+    <CTRL-E> scroll downwards (E for Extra lines)
+    <CTRL-Y> scroll upwards (Y like redo in MS-Windows using CTRL-Y)
 
 man - manual for a particular command / application
 more - display content of file with paging

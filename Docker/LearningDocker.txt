@@ -37,6 +37,22 @@ Docker client is the primary user interface to docker. It accepts commands from 
 In Dockerfile, we don't start from scratch. We always build an image starting from a existing one.
 From hub.docker.com we can search for a specific image to start with (php, java ...). Prefer official ones.
 
+
+Install
+(https://docs.docker.com/engine/getstarted/linux_install_help/)
+
+$ sudo apt-get update
+
+if curl is not installed  (check with $ which curl)
+$ sudo apt-get install curl
+
+Install the last version
+$ curl -fsSL https://get.docker.com/ | sh
+
+In order to run docker with the user "khalid" do:
+$ sudo usermod -aG docker khalid
+
+
 To create image, use <docker build -t our_image_name PATH_to_Dockerfile>, for example
 $ docker build -t hello-world .
 

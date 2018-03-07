@@ -14,7 +14,7 @@
 - `templates`
 
 ## Architecture
-
+See `./resources/shinken-architecture.png`
 
 ## Install
 
@@ -35,8 +35,57 @@
 
 ## Configure
 
-## Run 
+The main configuration file is /etc/shinken/shinken.cfg
+It's given to arbiter module as parameter from command line.
 
+The configuration is split to several configuration files, in directories
+alonside shinken.cfg. One file for one object definition.
+
+cfg\_dir statement indicates configuration files directory. It only reads .cfg
+files.
+
+For daemons (pollers, scheduler, receivers ..etc) their configuration is
+specified in .cfg files under specific folders alonside shinkin.cfg. For
+example /etc/shinken/pollers/ for poller daemons.
+
+Modules configuration files are in /etc/shinken/modules/.
+
+Modules are loaded by daemons. To load a module, use the statement __modules__.
+
+Resource files are used to store custom macros. Users may use them to store
+sensitive configuration information (passwords) without making them available
+to programs (CGIs ..). Shenkin daemon (/usr/bin/shinken-arbiter) is responsible
+of managing resource files.
+
+resource\_file directive may be used in main configuration file to specify one
+or more optional resource files.
+
+Object definition files are used to specify objects/items we want to monitor and how
+we should monitor them. Objects/items include hosts, services, hostgroups,
+contacts, contactgroups, commands, etc.
+
+Ojbect definition file is specified by cfg\_file and/or cfg\_dir in the main
+configuration file.
+
+Note that the main daemon is Shenkin daemon (which is actually shinken-arbiter
+daemon). It hasn't __ini__ file under /etc/shinken/daemons/ folder. Its __ini__
+section is actually included in main configuration file, shinken.cfg.
+
+cfg\_dir and/or cfg\_file inside main configuration file are read and considered
+by arbiter as __statements__. They order arbiter daemon to open the other configuration
+files speciefied by cfg\_dir and cfg\_file. Now if inside the other
+configuration files, there are other occurrences of cfg\_dir and/or cfg\_file,
+they are considered as __parameters__ and not as __statements__.
+
+Whith cfg\_dir and/or cfg\_file statements, all Shinken configuration is
+defined :
+- daemons
+- objects
+- resources
+
+
+
+## Run 
 
 ## Shinken filesystem structure
 - _ETC=`/etc/shinken/`_ location of all configuration files
