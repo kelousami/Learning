@@ -1,3 +1,5 @@
+Added line for review
+
 [root@postgresql1 9.6]# cat initdb.log 
 The files belonging to this database system will be owned by user "postgres".
 This user must also own the server process.
