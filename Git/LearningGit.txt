@@ -1,5 +1,5 @@
-
 Git is a distributed (source) version control system.
+
 Distributed, in the sense there is no need to central repository like we have
 with SVN and CVS.
 
@@ -123,6 +123,9 @@ tracks
 > In order to switch back to master
     $ git checkout master
 
+> In order to compare to branches 
+    $ git diff master..feature_x
+
 > In order to merge branch "feature_x" to master (after checkout master)
     $ git merge feature_x
 
@@ -195,7 +198,6 @@ the server and point local master branch at it
   Then reset a change 
     $ git reset -- hard 89a4780
 
-
 > Once a repo has been forked, in order to keep the forked updated, here are the steps:
   First, add a new remote to the original repo 
     $ git remote -v
@@ -209,8 +211,10 @@ the server and point local master branch at it
   Finally the local repo can be pushed to remote
     $ git push origin master
 
-
-
+> In order to rebase develop to master, assuming on develop branch 
+    $ git rebase --no-ff master
+  Then, as the remote origin/develop will be no more of interest, we just force it to take the local one 
+    $ git push --force origin develop
 
 
 
