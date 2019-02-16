@@ -1,3 +1,13 @@
+Working with interpreter
+------------------------
+	>>> dir()
+	['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'dis', 'pdb', 'staff', 'staff_copy', 'w']
+	>>> globals()
+	{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'w': 'jython', 'staff': ['a', 12, True, 4.5, None], 'staff_copy': ['a', 12, True, 4.5, None], 'dis': <module 'dis' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/dis.py'>, 'pdb': <module 'pdb' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/pdb.py'>}
+	>>> locals()
+	{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'w': 'jython', 'staff': ['a', 12, True, 4.5, None], 'staff_copy': ['a', 12, True, 4.5, None], 'dis': <module 'dis' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/dis.py'>, 'pdb': <module 'pdb' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/pdb.py'>}
+
+
 From docs.python.org
 --------------------
 
