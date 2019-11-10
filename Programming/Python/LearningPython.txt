@@ -1,3 +1,29 @@
+Working with interpreter
+------------------------
+    In order to display current variables known to the inetractive python interpreter 
+	>>> dir()
+	['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'dis', 'pdb', 'staff', 'staff_copy', 'w']
+	>>> globals()
+	{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'w': 'jython', 'staff': ['a', 12, True, 4.5, None], 'staff_copy': ['a', 12, True, 4.5, None], 'dis': <module 'dis' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/dis.py'>, 'pdb': <module 'pdb' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/pdb.py'>}
+	>>> locals()
+	{'__name__': '__main__', '__doc__': None, '__package__': None, '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': None, '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, 'w': 'jython', 'staff': ['a', 12, True, 4.5, None], 'staff_copy': ['a', 12, True, 4.5, None], 'dis': <module 'dis' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/dis.py'>, 'pdb': <module 'pdb' from '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/pdb.py'>}
+
+    In order to display the docstring of a given method, use help(the_method)
+    >>> help(squares.count)
+
+    Help on built-in function count:
+
+    count(...) method of builtins.list instance
+        L.count(value) -> integer -- return number of occurrences of value
+    (END)
+    
+    or simply 
+    >>> s_copy.extend.__doc__
+    'L.extend(iterable) -> None -- extend list by appending elements from the iterable'
+
+In Python, True is 1, False is 0.
+Therefore (1, True, 'mmmm!').count(1) equals 2 and ['zero', 'one'][False] equals 'zero'.
+
 From docs.python.org
 --------------------
 
@@ -227,7 +253,7 @@ Control flow
         >>> list(range(4))
         [0,1,2,3]
 
-        break my be use to break out the smallest enclosing for or while loop
+        break may be use to break out the smallest enclosing for or while loop
         else may also be used with for (and while?), when no break occurs
         continue let the next iteration of the loop to run
         pass does nothing, just pass. when a code is mandatory but we don't yet have the implementation, just put pass.
@@ -304,11 +330,10 @@ Coding conventions
     - 4-space indentation, no tabs
     - 79 line lenght max
     - Use CamelCase for classes and lower_case_with_underscores for functions and methods.
-    - Always user self as the name of the first method argument.
+    - Always use self as the name of the first method argument.
     - Some of this may be automated in ~/.vimrc, check it out
 
     - Syntax check: add python.vim under ~/.vim/syntax folder
-    - 
     
 PEP - Python Enhancement Proposals
 

@@ -12,16 +12,12 @@ Some use cases:
 - operating system image --> OS containers (such as LXC, OpenVZ, Linux VServer, BSD Jails and SOlaris zones)
 - application packageed as image --> Application containers (such as Docker and Rocket)
 
-
 Docker was build on top of LXC
 Docker (and most containers) operate at the process level
-
-
 
 According to Mark Shuttleworth
 ------------------------------
 Physical Machines --> Virtual machines (KVM..) --> Machine containers (LXD..) --> Process containers (Docker..) --> Application container (Snap..)
-
 
 Docker
 ------
@@ -54,7 +50,6 @@ $ curl -fsSL https://get.docker.com/ | sh
 In order to run docker with the user "khalid" do:
 $ sudo usermod -aG docker khalid
 
-
 To create image, use <docker build -t our_image_name PATH_to_Dockerfile>, for example
 $ docker build -t hello-world .
 
@@ -63,7 +58,8 @@ $ docker run -p 80:80 hello-world
 (notice -p option wich is used to redirect port between host and image which listen from 80 in the example)
 
 Volumes are used to share (see, no copy is made) files/folders between images and an image and its host OS. 
-To mount a volume we use -v option, example
+
+To mount a volume we use -v option, for example
 $ docker run -p 80:80 -v /home/kelousami/docker/src/:/var/www/html hello-world
 (it's ok to use -v while developing, but at the end, a build is necessary to construct the image, -v does not update/change the image)
 
@@ -73,7 +69,6 @@ See the container as if it is the main process (FOREGROUND).
 Docker client communicates to docker daemon via Rest API, Socket.IO and TCP. Rest API is the primary mode for communication.
 
 Docker registry is storage component for Docker images. May be public/private. An example is Docker Hub.
-
 
 Main Simple Functionnalities of Docker
 --------------------------------------
@@ -97,7 +92,6 @@ For example, to pull and run centos-7 (official version from hub.docker.com), we
 	$ sudo docker run -it centos:centos7
 	(-i to let it be interactive, -t to attach a terminal, both a necessary to have a terminal with stdin to interact with the image, 
 	as if we connect via ssh)
-
 
 To list all images in our system
 $ docker images
@@ -138,7 +132,6 @@ keywords
 	VOLUME ["path1", "path2"]
 
 	CMD -> Specify the command or the entry point when the container runs
-	
 
 Network 
 -------
@@ -156,7 +149,10 @@ $ sudo docker version
 $ sudo docker info
 $ sudo docker logs <container_id>
 
-
+Some known issues and limitations
+---------------------------------
+1. Docker does not like systemd and systemctl. A replacement to systemctl may be used https://github.com/gdraheim/docker-systemctl-replacement.
+2. Host kernel parameters apply to docker image. In case we need to change them (sysctl) we must change them at the host level.
 
 
 
