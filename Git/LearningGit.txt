@@ -216,8 +216,31 @@ the server and point local master branch at it
   Then, as the remote origin/develop will be no more of interest, we just force it to take the local one 
     $ git push --force origin develop
 
-
-
+> In order to setup a Git server, on a server machine do the following
+    $ sudo adduser git
+    $ sudo su git
+    $ mkdir .ssh && chmod 700 .ssh
+    $ touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
+  Then add a developer SSH public key into .ssh/authorized_keys
+    $ cat /tmp/id_rsa.dev.pub >> ~/.ssh/authorized_keys
+  Then create an empty remote repository without a working directory
+    $ mkdir -p /srv/git/project.git
+    $ cd /srv/git/project.git
+    $ git init --bare
+  Then, on a developer machine, do the following
+    $ cd myproject
+    $ git init
+    $ git add .
+    $ git commit -m "initial commit"
+    $ git remote add origin git@gitserver:/srv/git/project.git
+    $ git push origin master
+  Now, to restrict access via ssh to other users 
+    $ cat /etc/shells   # see if `git-shell` is already in there.  If not...
+    $ which git-shell   # make sure git-shell is installed on your system.
+    $ sudo -e /etc/shells  # and add the path to git-shell from last command
+    $ sudo chsh git -s $(which git-shell)
+  And restrict port forwarding using those options in authorized_keys
+    "no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty" just before "ssh-rsa"
 
 
 
