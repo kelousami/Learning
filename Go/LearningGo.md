@@ -29,8 +29,10 @@ func main() {
 (CRLT+D)
 
 $ go build
+
 $ ./hello
 hello, world
+
 $ go install
 
 ```
