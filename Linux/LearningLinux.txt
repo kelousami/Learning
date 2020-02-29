@@ -85,6 +85,10 @@ sed - stream editor for filtering and transforming text. sed process the input i
     <sed -i -- 's/kibana/logstash/g' *> substitute all occurences of 'kibana' by 'logstash' in all file under current location (this folder only, non-recursive).
 
 grep - find/display text/characters/patterns in file/stream
+     condider this :
+     grep -v a file : this displays all lines except those containing 'a'
+     grep -- -v file : this display all lines containing '-v'
+     -- is a builtin bash command indicating end of command options, after which only positional parameters are accepted. 
 
 awk - stream manipulation program
 	<awk 'NF' file> will display the file without empty/blank lines
