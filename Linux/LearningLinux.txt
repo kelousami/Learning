@@ -278,6 +278,7 @@ export - makes environment variables exported / accessible to child processes.
 	<export EDITOR=/usr/bin/vim> sets /usr/bin/vim as the EDITOR.
 	<export -n EDITOR> removes name EDITOR from the list of already exported variables.
 	<export -f myfunction> if myfunction() { echo "my function"; } then <export -f myfunction> makes it available we can call it <myfunction> and it will print 'my function' as output.
+	<export VARIABLE=${VALUE, -"DEFAULT_VALUE"}> this will export a name VARIABLE with the value of VALUE variable if defined, if not it will export VARIABLE with the value of DEFAULT_VALUE. if we use '=' instead of '-', then we also assign the 'DEFAULT_VALUE' to VALUE variable. 
 
 zip/unzip - compress/decompress files
 
