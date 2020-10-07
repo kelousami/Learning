@@ -280,6 +280,9 @@ export - makes environment variables exported / accessible to child processes.
 	<export -f myfunction> if myfunction() { echo "my function"; } then <export -f myfunction> makes it available we can call it <myfunction> and it will print 'my function' as output.
 	<export VARIABLE=${VALUE, -"DEFAULT_VALUE"}> this will export a name VARIABLE with the value of VALUE variable if defined, if not it will export VARIABLE with the value of DEFAULT_VALUE. if we use '=' instead of '-', then we also assign the 'DEFAULT_VALUE' to VALUE variable. 
 
+envsubst - part of gettext package, it substitutes values of environment variables.
+	<envsubst < "source.txt" > "destination.txt"> will substitute values of environment variables of 'destination.txt' by values from those of 'source.txt'
+
 zip/unzip - compress/decompress files
 
 apt-get - download and install packages with their dependencies
