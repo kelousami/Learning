@@ -85,6 +85,10 @@ sed - stream editor for filtering and transforming text. sed process the input i
     <sed -i -- 's/kibana/logstash/g' *> substitute all occurences of 'kibana' by 'logstash' in all file under current location (this folder only, non-recursive).
 
 grep - find/display text/characters/patterns in file/stream
+     condider this :
+     grep -v a file : this displays all lines except those containing 'a'
+     grep -- -v file : this display all lines containing '-v'
+     -- is a builtin bash command indicating end of command options, after which only positional parameters are accepted. 
 
 awk - stream manipulation program
 	<awk 'NF' file> will display the file without empty/blank lines
@@ -201,8 +205,7 @@ netstat - displays network information and statistics, sockets, port, bound addr
         tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      2083/dnsmasq        
 
 ss - similar to netstat, it prints socket statistics, ports, program ..etc
-    
-
+  
 uname - system OS version and distribution details
 	<uname -a> displays all information provided by uname such as linux kernel version, distriubution version, hostname, architecture ..
 	<uname -r> displays linux kernel release number (kernel version)
@@ -266,6 +269,19 @@ du - displays file space usage (options include dispalying times of last modific
 sort - sort function
 
 help - displays help for shell builtin commands
+
+shopt - builin that allows changing shell behavior
+	<shopt -s dotglob> this '-s' enables the option 'dotglob' which allows listing hiddden files that starts with '.' and '..' in the result of filename expansion.  
+
+export - makes environment variables exported / accessible to child processes.
+	<export> whithout any argument, views all exported variables, same as <export -p> for all variables exported on current shell.
+	<export EDITOR=/usr/bin/vim> sets /usr/bin/vim as the EDITOR.
+	<export -n EDITOR> removes name EDITOR from the list of already exported variables.
+	<export -f myfunction> if myfunction() { echo "my function"; } then <export -f myfunction> makes it available we can call it <myfunction> and it will print 'my function' as output.
+	<export VARIABLE=${VALUE, -"DEFAULT_VALUE"}> this will export a name VARIABLE with the value of VALUE variable if defined, if not it will export VARIABLE with the value of DEFAULT_VALUE. if we use '=' instead of '-', then we also assign the 'DEFAULT_VALUE' to VALUE variable. 
+
+envsubst - part of gettext package, it substitutes values of environment variables.
+	<envsubst < "source.txt" > "destination.txt"> will substitute values of environment variables of 'destination.txt' by values from those of 'source.txt'
 
 zip/unzip - compress/decompress files
 
