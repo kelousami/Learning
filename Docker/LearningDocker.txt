@@ -142,6 +142,28 @@ For example:
     creation just add "-p 8080 -p 9990" to run command (instead of -p 8080:8080 -p 9990:9990, which works for the first one and fails
     for teh second as ports are always in use).
 
+Volumes
+-------
+In order to create a volume use:
+$ docker volume create <volume_name>
+
+Then it can be used when running a container:
+$ docker run -d -v volume_name:inside_container_expected_volume_path img:tag
+
+To get more information about a volume:
+$ docker volume ls <volume_name>
+$ docker volume inspect <volume_name>
+
+To remove a volume:
+$ docker rm <volume_name>
+
+Where exactly on the host machine docker stores thoses volumes? 
+https://forums.docker.com/t/host-path-of-volume/12277/6
+
+$ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty 
+#user: root
+#password: <none>
+
 
 Diagnose problems
 -----------------
