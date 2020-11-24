@@ -98,9 +98,16 @@ node {
 
 ```
 
+# Jenkins as docker image
 
 
+## Run it 
 
+docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+
+The volume jenkins_home is created by docker on host machine.
+It is important that user jenkins (uid=1000) has access to the volume content
+on the host machine.
 
 
 
